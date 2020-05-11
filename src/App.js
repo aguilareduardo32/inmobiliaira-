@@ -7,6 +7,7 @@ import Background from './images/real-estate.jpg';
 import Footer from './components/static/footer';
 import { render } from "react-dom";
 import Inmuebles from './components/Inmuebles'
+import InfoSoli from './components/InfoSoli'
 
 
 
@@ -20,6 +21,8 @@ class App extends Component {
         
         <Route exact path="/" render={ () => <Home/>}/>
         <Route exact path="/inmuebles" render={ () => <Inmuebles/>}/>
+        <Route exact path="/ofrece" render={ () => <InfoSoli/> } />
+
         
         
       </Switch>

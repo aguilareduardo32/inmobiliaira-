@@ -8,10 +8,10 @@ const navbar = () => {
  return (
      <nav className="nav-style">
      
-        <img className="logo" src={Background}/>
+    <Link to="/">    <img className="logo" src={Background}/></Link>
          <ul>
            
-             <li><Link to='/quiere'>Inmuebles en venta o renta</Link></li>
+             <li><Link to='/inmuebles'>Inmuebles en venta o renta</Link></li>
              <li><Link to='/ofrece'>Vende o renta tu inmueble</Link></li>
              
              <li><Link to='/contacto'>Contacto</Link></li>
