@@ -5,9 +5,11 @@ const FilterBox = (props) => {
             <div>
             <p>Operación</p>
                 <input type='checkbox' defaultChecked name="tipo" value="VENTA" onClick={props.handleChange} onChange={props.handleChange} />
-                <label for="VENTA">Venta</label><br></br>
+                <label htmlFor="VENTA">Venta</label><br></br>
                 <input type='checkbox' defaultChecked name="tipo" value="RENTA" onClick= {props.handleChange} onChange={props.handleChange}/>
-                <label for="RENTA">Renta</label><br></br>
+                <label htmlFor="RENTA">Renta</label><br></br>
+
+
             </div>
             
     )

@@ -13,16 +13,16 @@ var sectionStyle = {
 
 const First = () => {
     return (
-        <div  className="servicios" style={ sectionStyle }>
+        <div  className="servicios2" style={ sectionStyle }>
         <br/>
         
             
             <div>
-            <Link to='/inmuebles'> <div className="first uno">
+            <Link to='/informesComRen'> <div className="first uno">
                  <h1>COMPRAR O RENTAR UN INMUEBLE</h1>
                 </div>
                 </Link> 
-                <Link to='/ofrece'>   <div className="first">
+                <Link to='/informesVenta'>   <div className="first">
                     <h1>VENDER O ARRENDAR UN INMUEBLE</h1>
                 </div></Link> 
             </div>

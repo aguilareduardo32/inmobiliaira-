@@ -50,8 +50,8 @@ const List = () => {
             
            
             
-            <div class="column">
-                <div class="card">
+            <div className="column">
+                <div className="card">
                 <img className="casa" src={Background}/>
                 <h3>Casa en pedregal</h3>
                 <h5>Venta</h5>
@@ -64,8 +64,8 @@ const List = () => {
                 </div>
             </div>
 
-            <div class="column">
-                <div class="card">
+            <div className="column">
+                <div className="card">
                 <img className="casa" src={Background}/>
                 <h3>Casa en pedregal</h3>
                 <h5>Venta</h5>
@@ -78,8 +78,8 @@ const List = () => {
                 </div>
             </div>
             
-            <div class="column">
-                <div class="card">
+            <div className="column">
+                <div className="card">
                 <img className="casa" src={Background}/>
                 <h3>Casa en pedregal</h3>
                 <h5>Venta</h5>
@@ -92,8 +92,8 @@ const List = () => {
                 </div>
             </div>
             
-            <div class="column">
-                <div class="card">
+            <div className="column">
+                <div className="card">
                 <img className="casa" src={Background}/>
                 <h3>Casa en pedregal</h3>
                 <h5>Venta</h5>
@@ -105,8 +105,8 @@ const List = () => {
                 <Link to='/quiere'><button className="button1">Mas información</button></Link>
                 </div>
             </div>
-            <div class="column">
-                <div class="card">
+            <div className="column">
+                <div className="card">
                 <img className="casa" src={Background}/>
                 <h3>Casa en pedregal</h3>
                 <h5>Venta</h5>
@@ -118,15 +118,15 @@ const List = () => {
                 <Link to='/quiere'><button className="button1">Mas información</button></Link>
                 </div>
             </div>
-            <div class="column">
-                <div class="card">
+            <div className="column">
+                <div className="card">
                 <h3>Card 4</h3>
                 <p>Some text</p>
                 <p>Some text</p>
                 </div>
             </div>
-            <div class="column">
-                <div class="card">
+            <div className="column">
+                <div className="card">
                 <h3>Card 4</h3>
                 <p>Some text</p>
                 <p>Some text</p>

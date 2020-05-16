@@ -7,9 +7,9 @@ const InmuTable = (props) => {
 
 
     return(
-        <div>
+        <div className="inmuebles">
             {inmuebles.map((item) => {
-                return <InmuRow key={item._id} titulo={item.titulo} />
+                return <InmuRow key={item._id} titulo={item.titulo}  precio={item.precio} recamaras={item.recamaras} baños={item.baños} descripcion={item.descripcion} metros={item.metros} direccion={item.direccion}  fotos/>
             })}
         </div>
     )

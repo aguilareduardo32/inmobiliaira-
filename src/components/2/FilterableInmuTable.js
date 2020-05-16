@@ -3,6 +3,8 @@ import SearchBar from './SearchBar'
 import  ImnuTable from './InmuTable'
 import Filter from './Filter'
 
+import FilterMin from './FilterMin';
+
 
 
 class FilterableInmuTable extends Component {
@@ -15,8 +17,9 @@ class FilterableInmuTable extends Component {
             filterText: "",
             showRenta: true,
             showVenta: true,
-           
-
+            filterMin: 0,
+            filterMax: 0,
+            filterRooms: 0,
             
         }
     }
@@ -34,6 +37,28 @@ class FilterableInmuTable extends Component {
             filterText: value
         });
     };
+
+    handleRoomsChange = (e) => {
+
+        let { value } = e.target;
+        this.setState({
+            filterRooms: value
+        }) 
+    }
+    handleMinChange = (e) => {
+
+        let { value } = e.target;
+        this.setState({
+            filterMin: value
+        })
+
+    }
+    handleMaxChange = (e) => {
+        let { value } = e.target;
+        this.setState({
+            filterMax: value
+        })
+    }
 
     handleTypeChange = (e) => {
 
@@ -76,14 +101,31 @@ class FilterableInmuTable extends Component {
             if (this.state.filterText) {
                 textFilter = item.delegacion.toLowerCase().includes(this.state.filterText.toLowerCase()) || item.colonia.toLowerCase().includes(this.state.filterText.toLowerCase())
             }
-            return rentaFilter && ventaFilter && textFilter
+            let minPriceFilter = true;
+            if (this.state.filterMin > 0) {
+                minPriceFilter = item.precio > this.state.filterMin
+            }
+            let maxPriceFilter = true;
+            if (this.state.filterMax > 0) {
+                maxPriceFilter = item.precio < this.state.filterMax
+            }
+            let roomFilter = true;
+            if(this.state.filterRooms) {
+                roomFilter = item.recamaras >= this.state.filterRooms
+            }
+            return rentaFilter && ventaFilter && textFilter && minPriceFilter && maxPriceFilter && roomFilter
         })
         return(
-            <div className="Filterable">
-                <h1>Inmuebles</h1>
-               <SearchBar  handleChange={this.handleChange}/>
-               <ImnuTable inmuebles={inmuebles} />
-               <Filter  handleChange={this.handleTypeChange} handleDelete={this.handleDelete}/>
+            <div>
+
+                <div className="filtros">
+                        <SearchBar  handleChange={this.handleChange} handleChangeMin={this.handleMinChange} handleChangeMax={this.handleMaxChange} handleChangeRoom={this.handleRoomsChange}/>
+                        <Filter  handleChange={this.handleTypeChange  } handleDelete={this.handleDelete}/> 
+                </div>
+               
+                <ImnuTable className="inmuebles" inmuebles={inmuebles} />
+            
+                      
             </div>
         )
     }

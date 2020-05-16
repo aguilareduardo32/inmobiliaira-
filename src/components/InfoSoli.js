@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import InfoForm from './3/infoForm'
+import InfoForm from './3/infoVentaForm'
 
 
 const InfoSoli = () => {
     return (
-        <div>
-            <InfoForm />
+        <div className="info">
+            <InfoForm className="info" />
+           
+    
         </div>
     )
 }

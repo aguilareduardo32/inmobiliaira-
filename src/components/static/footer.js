@@ -1,9 +1,19 @@
 import React from 'react';
 
-const Footer = () => (
-    <footer className="footer">
-      <p>Some footer nonsense!</p>
-    </footer>
-  );
+const Footer = () => {
+  return(
+
+      <div>
+
+          <footer className="footer">
+            
+            <br/>
+            <p>DERECHOS RESERVADOS IMOBILIARIACHICAGO MÉXICO © 2019 | AVISO DE PRIVACIDAD</p>
+            
+          </footer>
+
+      </div>
+    )
+}
 
 export default Footer

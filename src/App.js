@@ -8,7 +8,8 @@ import Footer from './components/static/footer';
 import { render } from "react-dom";
 import Inmuebles from './components/Inmuebles'
 import InfoSoli from './components/InfoSoli'
-
+import InfoComRen from './components/InfoComRen'
+import FormaEnviada from './components/FormaEnviada'
 
 
 class App extends Component {
@@ -17,17 +18,22 @@ class App extends Component {
       <div className= "App">
       
       <Navbar />
+      
       <Switch>
         
         <Route exact path="/" render={ () => <Home/>}/>
         <Route exact path="/inmuebles" render={ () => <Inmuebles/>}/>
-        <Route exact path="/ofrece" render={ () => <InfoSoli/> } />
+        <Route exact path="/informesVenta" render={ () => <InfoSoli/> } />
+        <Route exact path="/informesComRen" render={() => <InfoComRen/>} />
+        <Route exact path="/formaEnviada" render={() => <FormaEnviada/>} />
 
         
         
       </Switch>
-      <br/>
+     
+      
       <Footer />
+     
       </div>
 
     );
