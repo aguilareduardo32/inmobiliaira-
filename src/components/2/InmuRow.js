@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
+import { Link } from 'react-router-dom';
 
 const responsive = {
   superLargeDesktop: {
@@ -32,7 +33,8 @@ const InmuRow = props => {
     metros,
     direccion,
     precio,
-    fotos
+    fotos,
+    id
   } = props;
 
   const images = [
@@ -78,6 +80,8 @@ const InmuRow = props => {
           <img className="casa2" src={fotos} />
         </Carousel>
 
+     <Link to={`/${id}`}>
+     
         <div className="desc">
           <h1>{titulo}</h1>
           <br />
@@ -88,6 +92,8 @@ const InmuRow = props => {
 
           <h5>${precio}</h5>
         </div>
+
+        </Link>
       </div>
     </div>
   );

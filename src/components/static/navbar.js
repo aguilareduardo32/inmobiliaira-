@@ -14,7 +14,7 @@ const navbar = () => {
              <li><Link to='/inmuebles'>Inmuebles en venta o renta</Link></li>
              <li><Link to='/informesVenta'>Vende o renta tu inmueble</Link></li>
              
-             <li><Link to='/contacto'>Contacto</Link></li>
+             <li><Link to='/contactoBase'>Contacto</Link></li>
          </ul>
      </nav>
  )   
