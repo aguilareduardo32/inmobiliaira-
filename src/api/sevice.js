@@ -11,17 +11,34 @@ const errorHandler = err => {
 export default {
     service,
 
-    handleUpload (theFile) {
+    handleUpload (image) {
 
-        return service.post('/upload-images', theFile)
+        return service.post('/upload', image)
+  
+            .then(res => res.data)
+            .catch(errorHandler);
+
+    },
+    handleUpload2 (image) {
+
+        return service.post('/uploaddd', image)
+  
+            .then(res => res.data)
+            .catch(errorHandler);
+
+    },
+    handleUpload3 (image) {
+
+        return service.post('/upload3', image)
+  
             .then(res => res.data)
             .catch(errorHandler);
 
     },
 
-    saveNewThing(newThing) {
+    saveNewThing(inmueble) {
 
-        return service.post('/create', newThing)
+        return service.post('/create', inmueble)
             .then(res => res.data)
             .catch(errorHandler);
         }

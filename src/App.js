@@ -12,7 +12,9 @@ import InfoComRen from './components/InfoComRen'
 import FormaEnviada from './components/FormaEnviada'
 import ContactoBase from './components/ContactoBase'
 import DetallesInmuebles from './components/InmuebleDetails'
-import Add from './components/Add'
+import AddInmueble from './components/3/AddInmueble'
+
+import { BrowserRouter as Router } from 'react-router-dom'
 
 
 class App extends Component {
@@ -30,11 +32,12 @@ class App extends Component {
         <Route exact path="/informesVenta" render={ () => <InfoSoli/> } />
         <Route exact path="/informesComRen" render={() => <InfoComRen/>} />
         <Route exact path="/contactoBase" render={() => <ContactoBase />} />
-        <Route exact path="/:id" render={() => <DetallesInmuebles  {...this.props} />} />
+        <Route exact path="/addInmueble" render={() => <AddInmueble/>} />
         <Route exact path="/formaEnviada" render={() => <FormaEnviada/>} />
-        <Route exact path="/add" render={() => <Add/>} />
+
+        <Route exact path="/:id" render={() => <DetallesInmuebles  {...this.props} />} />
         
-        
+      
       </Switch>
      
       

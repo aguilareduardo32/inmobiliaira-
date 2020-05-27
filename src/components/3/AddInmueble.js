@@ -8,18 +8,12 @@ class AddInmueble extends Component {
         super(props);
         this.state = {
             titulo: "",
-            tipo: "",
-            dueño: "",
-            recamaras: "",
-            descripcion: "",
-            metros: "",
+          
             colonia: "",
-            calle: "",
-            precio: "",
-            delegacion: "",
-            baños: "",
-            telefono: "",
-            image: [],
+          
+            image1: "",
+            image2: "",
+            image3: ""
         };
     }
 
@@ -28,23 +22,61 @@ class AddInmueble extends Component {
         this.setState({ [name]: value });
     }
 
-    handleFileUpload = e => {
-        console.log("The file to be uploades id", e.target.files)
+    handleFileUpload1 = e => {
+        console.log("The file to be uploades id", e.target.files[0])
 
         const uploadData  = new FormData();
 
-        uploadData.append("image", e.target.files)
+        uploadData.append("image1", e.target.files[0])
+      
 
         service.handleUpload(uploadData)
         .then(response => {
 
-            this.setState({ image: response.secure_url }) ;
+            this.setState({ image1: response.secure_url   }) ;
         })
         .catch(err => {
             console.log("error while uploading the file: ", err);
         })
 
     }
+    handleFileUpload2 = e => {
+        console.log("The file to be uploades id", e.target.files[0])
+
+        const uploadData  = new FormData();
+
+        uploadData.append("image2", e.target.files[0])
+      
+
+        service.handleUpload2(uploadData)
+        .then(response => {
+
+            this.setState({ image2: response.secure_url   }) ;
+        })
+        .catch(err => {
+            console.log("error while uploading the file: ", err);
+        })
+
+    }
+    handleFileUpload3 = e => {
+        console.log("The file to be uploades id", e.target.files[0])
+
+        const uploadData  = new FormData();
+
+        uploadData.append("image3", e.target.files[0])
+      
+
+        service.handleUpload3(uploadData)
+        .then(response => {
+
+            this.setState({ image3: response.secure_url   }) ;
+        })
+        .catch(err => {
+            console.log("error while uploading the file: ", err);
+        })
+
+    }
+
 
     handleSubmit = e => {
         e.preventDefault();
@@ -68,14 +100,26 @@ class AddInmueble extends Component {
             <label>titulo</label>
                 <input 
                     type="text" 
-                    name="name" 
+                    name="titulo" 
                     value={ this.state.titulo } 
+                    onChange={ e => this.handleChange(e)} />
+
+                <input 
+                    type="text" 
+                    name="colonia" 
+                    value={ this.state.colonia } 
                     onChange={ e => this.handleChange(e)} />
                 
                
                 <input 
                     type="file" 
-                    onChange={(e) => this.handleFileUpload(e)} /> 
+                    onChange={(e) => this.handleFileUpload1(e)} /> 
+                 <input 
+                    type="file" 
+                    onChange={(e) => this.handleFileUpload2(e)} /> 
+                <input 
+                    type="file" 
+                    onChange={(e) => this.handleFileUpload3(e)} /> 
                 <button type="submit">Save new thing</button>
             </form>
           </div>

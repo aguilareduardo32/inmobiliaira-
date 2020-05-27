@@ -1,13 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 
-class FormaRecibida extends Component {
-    handleChange = (event) => {  
-        
-        this.props.history.push('/')
-        
-    }
+class FormaEnviada extends Component {
+    
+    
     render(){
         return(
             <div className="recibido">
@@ -24,5 +21,5 @@ class FormaRecibida extends Component {
     }
 }
 
-export default withRouter(FormaRecibida)
+export default withRouter(FormaEnviada);
 

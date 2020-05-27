@@ -484,8 +484,12 @@ a {
 
 .desc {
   margin-left: 290px;
-  margin-top: -220px;
+  
   text-align: left;
+}
+
+.desc h1 {
+    font-size: xx-large;
 }
 
 .column3 input {
@@ -501,6 +505,7 @@ a {
 }
 .recibido {
   height: 400px;
+  width: 100%;
 }
 .columnRecibido h1 {
   margin-top: 150px;

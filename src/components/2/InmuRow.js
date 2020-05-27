@@ -33,19 +33,24 @@ const InmuRow = props => {
     metros,
     direccion,
     precio,
+    image1,
+    image2,
+    image3,
     fotos,
+    
     id
   } = props;
 
-  const images = [
+  const images = [ 
+
     {
-      original: "https://picsum.photos/id/1018/1000/600/"
+      original:  image1,
     },
     {
-      original: "https://picsum.photos/id/1015/1000/600/"
+      original:  image2,
     },
     {
-      original: "https://picsum.photos/id/1019/1000/600/"
+      original:  image3,
     }
   ];
 
@@ -77,12 +82,13 @@ const InmuRow = props => {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
-          <img className="casa2" src={fotos} />
+          <img src={fotos}></img>
         </Carousel>
 
      <Link to={`/${id}`}>
      
         <div className="desc">
+
           <h1>{titulo}</h1>
           <br />
 

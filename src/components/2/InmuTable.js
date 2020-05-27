@@ -9,7 +9,7 @@ const InmuTable = (props) => {
     return(
         <div className="inmuebles">
             {inmuebles.map((item) => {
-                return <InmuRow key={item._id} titulo={item.titulo}  precio={item.precio} recamaras={item.recamaras} baños={item.baños} descripcion={item.descripcion} metros={item.metros} direccion={item.direccion} id={item._id}  fotos/>
+                return <InmuRow key={item._id} titulo={item.titulo}  precio={item.precio} recamaras={item.recamaras} baños={item.baños} descripcion={item.descripcion} metros={item.metros} direccion={item.direccion} id={item._id}   image1={item.image1} image2={item.image2} image3={item.image3}/>
             })}
         </div>
     )
