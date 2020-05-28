@@ -3,28 +3,29 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 5
+    items: 5,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3
+    items: 3,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2
+    items: 2,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 1
-  }
+    items: 1,
+  },
 };
-const InmuRow = props => {
+const InmuRow = (props) => {
+  console.log(props);
   const {
     titulo,
     recamaras,
@@ -37,29 +38,32 @@ const InmuRow = props => {
     image2,
     image3,
     fotos,
-    
-    id
+    id,
+    imageCollection,
   } = props;
 
-  const images = [ 
-
+  /* const images = [
     {
-      original:  image1,
+      original: image1,
     },
     {
-      original:  image2,
+      original: image2,
     },
     {
-      original:  image3,
-    }
-  ];
+      original: image3,
+    },
+  ]; */
+  // console.log(imageCollection.length);
+  let imagesC = imageCollection.map((item) => {
+    return { original: item, thumbnail: item };
+  });
 
   return (
     <div class="pilar">
       <div class="rectangle">
         <div className="imager-gallery-wrapper">
           <ImageGallery
-            items={images}
+            items={imagesC}
             showPlayButton={false}
             showFullscreenButton={false}
             showThumbnails={false}
@@ -85,20 +89,17 @@ const InmuRow = props => {
           <img src={fotos}></img>
         </Carousel>
 
-     <Link to={`/${id}`}>
-     
-        <div className="desc">
+        <Link to={`/${id}`}>
+          <div className="desc">
+            <h1>{titulo}</h1>
+            <br />
 
-          <h1>{titulo}</h1>
-          <br />
+            <p>{direccion}</p>
 
-          <p>{direccion}</p>
+            <p>recamaras: {recamaras}</p>
 
-          <p>recamaras: {recamaras}</p>
-
-          <h5>${precio}</h5>
-        </div>
-
+            <h5>${precio}</h5>
+          </div>
         </Link>
       </div>
     </div>
