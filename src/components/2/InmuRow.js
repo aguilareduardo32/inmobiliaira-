@@ -53,7 +53,8 @@ const InmuRow = (props) => {
       original: image3,
     },
   ]; */
-  // console.log(imageCollection.length);
+  console.log(imageCollection.length);
+
   let imagesC = imageCollection.map((item) => {
     return { original: item, thumbnail: item };
   });
