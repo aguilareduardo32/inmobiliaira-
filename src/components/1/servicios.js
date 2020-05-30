@@ -7,13 +7,11 @@ const Serv = () => {
     return(
         
         <div  className="servicios1">
-        <br/>
+      
         
-            <h1>Servicios Inmobiliarios</h1>
-            <br/>
-            <br/>
-          
-            <div>
+      <p className="titulo"> Servicios inmobiliarios</p>
+            
+            
                 <div className="card2">
                 <img className="serv1" src={Background}/>
                 
@@ -22,16 +20,16 @@ const Serv = () => {
                 
                 <p className="servInfoP">Somos especialistas en el mercado y contamos con herramientas exclusivas que te permitirán encontrar en nuestro sistema, propiedades en un valor real de mercado.</p>
                 </div>
-            </div>
-            <div>
-                <div className="card2">
+           
+           
+                <div className="card2 dos">
                 <img className="serv1" src={Background1}/>
                 
                 <h3 className="servInfo">Vender o arrendar un inmueble</h3>
                 <br/>
-                <p className="servInfoP">En Tecnocasa sabemos que vender una propiedad no es simplemente subir un anuncio a un portal. Con nosotros encontrarás el compromiso de un servicio personalizado, ágil y transparente, que gracias a nuestras herramientas te permitirá encontrar al comprador ideal en el menor tiempo posible.</p>
+                <p className="servInfoP"> Con nosotros encontrarás el compromiso de un servicio personalizado, ágil y transparente, que gracias a nuestras herramientas te permitirá encontrar al comprador ideal en el menor tiempo posible.</p>
                
-                </div>
+                
                 </div>
 
         </div>

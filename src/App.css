@@ -44,17 +44,21 @@ a {
 
 .first {
   display: inline-block;
-
+  font-size: xx-large;
   background-color: transparent;
   width: 300px;
   border: 7px solid black;
-  padding: 50px;
+  padding: 90px;
   margin: 20px;
   position: relative;
-  margin-top: 115px;
+  margin-top: 75px;
   margin-right: 100px;
   margin-left: 50px;
   text-align: center;
+}
+.first h1{
+  font-size: 50px;
+  margin-top: -90px;
 }
 .uno {
   margin-right: 80px;
@@ -156,7 +160,7 @@ a {
   text-align: center;
   background-color: #f1f1f1;
   width: 370px;
-  height: 300px;
+  height: 390px;
 }
 
 .row {
@@ -179,7 +183,7 @@ a {
 @media screen and (max-width: 1408px) {
   .card {
     width: 250px; /* The width is 100%, when the viewport is 800px or smaller */
-    height: 300px;
+    height: 400px;
     font-size: medium;
   }
 }
@@ -275,25 +279,37 @@ a {
 }
 .servicios1 {
   
+  display: inline-block;
+}
+.servi{
+  font-size: 70px;
 }
 .nou {
   margin-bottom: 150px;
 }
 .serv1 {
-  width: 446px;
+  width: 524px;
   height: 300px;
-  margin-left: -18px;
+  margin-left: -16px;
   margin-top: -18px;
 }
 .card2 {
+  
   display: inline-block;
   margin-top: 0px;
   padding: 16px;
   text-align: center;
   background-color: transparent;
-  width: 410px;
-  height: 590px;
+  width: 490px;
+  height: 500px;
   border: 2px solid black;
+  float: left;
+  margin: 27px;
+}
+
+.dos {
+  margin-right: 80px;
+  margin-left: -130px;
 }
 .servicios21 {
   margin-top: 50px;
@@ -326,8 +342,7 @@ a {
   margin-top: 33px;
   margin-left: 10px;
 }
-.servicios1 {
-}
+
 .loginsub {
   width: 300px;
   cursor: pointer;
@@ -386,6 +401,24 @@ a {
 }
 .yei {
   cursor: pointer;
+}
+.button1{
+  width: 200px;
+  height: 39px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.button1 p {
+  
+}
+.titulo {
+  font-size: 45px;
+}
+.servInfo .servInfoP{
+  margin-bottom: -50px;
+}
+.ser{
+  margin-top: -35px;
 }
 
 .column2 {
@@ -466,13 +499,14 @@ a {
 }
 
 .rectangle {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  border-radius: 15px;
+
   display: inline-block;
   background-color: #f1f1f1;
-  width: 720px;
-  height: 201px;
+  width: 770px;
+  height: 270px;
   position: relative;
+  align-items: center;
 }
 
 .casa2 {
@@ -514,15 +548,15 @@ a {
 
 .imager-gallery-wrapper {
   position: absolute;
-  top: 15px;
-  left: 70px;
-  width: 200px;
+
+ height: 290px;
+  width: 276px;
   margin: 0;
 }
 
 .image-gallery-slide img {
-  width: 300px;
-  height: 130px;
+  width: 280px;
+  height: 230px;
 }
 
 .image-gallery-left-nav .image-gallery-svg,
@@ -535,3 +569,5 @@ a {
   padding: 1px 20px !important;
   top: 5px !important;
 }
+
+

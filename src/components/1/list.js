@@ -26,7 +26,8 @@ const responsive = {
 const List = () => {
     return (
         <div className="">
-        <h1>Inmuebles en venta y renta</h1>
+
+        <p className="titulo"> Inmuebles mas vistos</p>
         <br/>
         <br/>
         
@@ -53,86 +54,109 @@ const List = () => {
             <div className="column">
                 <div className="card">
                 <img className="casa" src={Background}/>
-                <h3>Casa en pedregal</h3>
-                <h5>Venta</h5>
-                <p>320m2 <br/>
-                    5 habitaciones<br/>
-                    3 baños<br/>
-                    25,000,000
-                </p>
-                <Link to='/quiere'><button className="button1">Mas información</button></Link>
+                <h1>Casa en venta pedregal</h1>
+                <br/>
+                <h3>320m2 </h3>
+                <h3> 5 habitaciones<br/></h3>
+                <h3>  3 baños<br/></h3>
+                <h3> $ 25,000,000</h3>
+                <br/>
+                <Link to='/quiere'><button className="button1">Ver</button></Link>
                 </div>
             </div>
 
-            <div className="column">
-                <div className="card">
-                <img className="casa" src={Background}/>
-                <h3>Casa en pedregal</h3>
-                <h5>Venta</h5>
-                <p>320m2 <br/>
-                    5 habitaciones<br/>
-                    3 baños<br/>
-                    25,000,000
-                </p>
-                <Link to='/quiere'><button className="button1">Mas información</button></Link>
-                </div>
-            </div>
+          
             
             <div className="column">
                 <div className="card">
                 <img className="casa" src={Background}/>
-                <h3>Casa en pedregal</h3>
-                <h5>Venta</h5>
-                <p>320m2 <br/>
-                    5 habitaciones<br/>
-                    3 baños<br/>
-                    25,000,000
-                </p>
-                <Link to='/quiere'><button className="button1">Mas información</button></Link>
+                <h1>Casa en venta pedregal</h1>
+                <br/>
+                <h3>320m2 </h3>
+                <h3> 5 habitaciones<br/></h3>
+                <h3>  3 baños<br/></h3>
+                <h3> $ 25,000,000</h3>
+                <br/>
+                <Link to='/quiere'><button className="button1">Ver</button></Link>
                 </div>
             </div>
+            
+            
             
             <div className="column">
                 <div className="card">
                 <img className="casa" src={Background}/>
-                <h3>Casa en pedregal</h3>
-                <h5>Venta</h5>
-                <p>320m2 <br/>
-                    5 habitaciones<br/>
-                    3 baños<br/>
-                    25,000,000
-                </p>
-                <Link to='/quiere'><button className="button1">Mas información</button></Link>
-                </div>
-            </div>
-            <div className="column">
-                <div className="card">
-                <img className="casa" src={Background}/>
-                <h3>Casa en pedregal</h3>
-                <h5>Venta</h5>
-                <p>320m2 <br/>
-                    5 habitaciones<br/>
-                    3 baños<br/>
-                    25,000,000
-                </p>
-                <Link to='/quiere'><button className="button1">Mas información</button></Link>
-                </div>
-            </div>
-            <div className="column">
-                <div className="card">
-                <h3>Card 4</h3>
-                <p>Some text</p>
-                <p>Some text</p>
-                </div>
-            </div>
-            <div className="column">
-                <div className="card">
-                <h3>Card 4</h3>
-                <p>Some text</p>
-                <p>Some text</p>
+                <h1>Casa en venta pedregal</h1>
+                <br/>
+                <h3>320m2 </h3>
+                <h3> 5 habitaciones<br/></h3>
+                <h3>  3 baños<br/></h3>
+                <h3> $ 25,000,000</h3>
+                <br/>
+                <Link to='/quiere'><button className="button1">Ver</button></Link>
                 </div>
             </div>
             
+           
+            
+            <div className="column">
+                <div className="card">
+                <img className="casa" src={Background}/>
+                <h1>Casa en venta pedregal</h1>
+                <br/>
+                <h3>320m2 </h3>
+                <h3> 5 habitaciones<br/></h3>
+                <h3>  3 baños<br/></h3>
+                <h3> $ 25,000,000</h3>
+                <br/>
+                <Link to='/quiere'><button className="button1">Ver</button></Link>
+                </div>
+            </div>
+           
+            
+            <div className="column">
+                <div className="card">
+                <img className="casa" src={Background}/>
+                <h1>Casa en venta pedregal</h1>
+                <br/>
+                <h3>320m2 </h3>
+                <h3> 5 habitaciones<br/></h3>
+                <h3>  3 baños<br/></h3>
+                <h3> $ 25,000,000</h3>
+                <br/>
+                <Link to='/quiere'><button className="button1">Ver</button></Link>
+                </div>
+            </div>
+         
+            
+            <div className="column">
+                <div className="card">
+                <img className="casa" src={Background}/>
+                <h1>Casa en venta pedregal</h1>
+                <br/>
+                <h3>320m2 </h3>
+                <h3> 5 habitaciones<br/></h3>
+                <h3>  3 baños<br/></h3>
+                <h3> $ 25,000,000</h3>
+                <br/>
+                <Link to='/quiere'><button className="button1">Ver</button></Link>
+                </div>
+            </div>
+           
+            
+            <div className="column">
+                <div className="card">
+                <img className="casa" src={Background}/>
+                <h1>Casa en venta pedregal</h1>
+                <br/>
+                <h3>320m2 </h3>
+                <h3> 5 habitaciones<br/></h3>
+                <h3>  3 baños<br/></h3>
+                <h3> $ 25,000,000</h3>
+                <br/>
+                <Link to='/quiere'><button className="button1">Ver</button></Link>
+                </div>
+            </div>
 
             </Carousel>
 </div>
