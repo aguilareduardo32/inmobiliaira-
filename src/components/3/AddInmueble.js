@@ -23,7 +23,7 @@ class AddInmueble extends Component {
 
   handleFileUpload1 = (e) => {
     console.log("The file to be uploades id", e.target.files[0]);
-    return;
+    //return;
     const uploadData = new FormData();
     uploadData.append("image1", e.target.files[0]);
     service
