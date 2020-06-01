@@ -51,23 +51,43 @@ class InmuDe extends Component {
     
 
  render(){ 
-
-    var imagesC = []
-  
-   Object.keys(this.props.imagesCollection).map(function(key, index) {
-       this.props.imagesCollection[key] = imagesC
-     })
-   
-    imagesC.map((item) => {
-        return { original: item, thumbnail: item };
-      })
-  
+  let imagesC = this.props.imagesCollection.map((item) => {
+    return { original: item, thumbnail: item };
+  });
 
   return (
     <div class="pilar">
-         
-         {this.props.imagesCollection && this.props.imagesCollection.lenght > 0 ?  
-         <p> {this.props.imagesCollection.lenght}</p> : <div>0</div>}
+          <div class="rectangle">
+        <div className="imager-gallery-wrapper">
+          <ImageGallery
+            items={imagesC}
+            showPlayButton={false}
+            showFullscreenButton={false}
+            showThumbnails={false}
+            showIndex={true}
+          />
+        </div>
+        <Carousel
+          swipeable={true}
+          draggable={false}
+          showDots={false}
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlaySpeed={1000}
+          keyBoardControl={true}
+          customTransition="all .5"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          <img  className="imager" src={fotos}></img>
+        </Carousel>
+
+         {this.props.imagesCollection && this.props.imagesCollection.length > 0 ?  
+         <p> {this.props.imagesCollection.length}</p> : <div>0</div>}
       
           <div className="desc">
             <h1>{this.props.titulo}</h1>
@@ -84,7 +104,7 @@ class InmuDe extends Component {
           </div>
         
       </div>
-      
+    </div>  
   );
 }
 }
