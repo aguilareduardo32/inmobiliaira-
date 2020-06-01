@@ -87,21 +87,24 @@ const InmuRow = (props) => {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
-          <img src={fotos}></img>
+          <img  className="imager" src={fotos}></img>
         </Carousel>
 
-        <Link to={`/${id}`}>
+      
           <div className="desc">
             <h1>{titulo}</h1>
-            <br />
+        
 
-            <p>{direccion}</p>
+            <p>📍{direccion}</p>
 
             <p>recamaras: {recamaras}</p>
+             <p>construidos: {metros}m2</p>
 
             <h5>${precio}</h5>
+            
+            <Link to={`/${id}`}>   <input className="e"  type="submit" value="Ver mas" /></Link> 
           </div>
-        </Link>
+        
       </div>
     </div>
   );

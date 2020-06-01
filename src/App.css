@@ -19,7 +19,17 @@
 
   align-items: center;
 }
-
+.s {
+  font-size: 50px;
+}
+.y{
+  font-size: 30px;
+}
+.e{
+  font-size: 27px;
+  margin-top: 13px;
+  cursor: pointer;
+}
 .nav-style li {
   list-style: none;
 
@@ -278,11 +288,12 @@ a {
   opacity: 1;
 }
 .servicios1 {
-  
+  text-align: left;
   display: inline-block;
 }
 .servi{
   font-size: 70px;
+  text-align: center;
 }
 .nou {
   margin-bottom: 150px;
@@ -480,13 +491,21 @@ a {
   float: left;
   margin-top: 90px;
   margin-left: -230px;
-  height: 500px;
+  height: 400px;
+  width: 250px;
+  border-radius: 15px;
+  background-color: #f1f1f1;
 }
+.filtros p {
+  margin-top: 15px;
+
+}
+
 
 .inmuebles {
   margin-top: 30px;
   display: inline-block;
-  margin-left: -100px;
+  margin-left: -150px;
 }
 
 .pilar {
@@ -495,7 +514,7 @@ a {
   align-items: center;
 
   padding: 0 10px;
-  margin-left: -150px;
+  margin-left: 25px;
 }
 
 .rectangle {
@@ -509,6 +528,7 @@ a {
   align-items: center;
 }
 
+
 .casa2 {
   margin-left: -470px;
   margin-top: -13px;
@@ -517,6 +537,7 @@ a {
 }
 
 .desc {
+  margin-top: -13px;
   margin-left: 290px;
   
   text-align: left;
@@ -525,6 +546,10 @@ a {
 .desc h1 {
     font-size: xx-large;
 }
+.desc p {
+  font-size: 28px;
+}
+
 
 .column3 input {
   width: 300px;
@@ -549,15 +574,21 @@ a {
 .imager-gallery-wrapper {
   position: absolute;
 
- height: 290px;
-  width: 276px;
-  margin: 0;
+
+
+}
+.imager-gallery-wrapper img{
+  
+  width: 490px;
+  height: 270px;
+
+}
+.image-gallery-image img {
+  height: 200px;
+  width: 350px;
 }
 
-.image-gallery-slide img {
-  width: 280px;
-  height: 230px;
-}
+
 
 .image-gallery-left-nav .image-gallery-svg,
 .image-gallery-right-nav .image-gallery-svg {

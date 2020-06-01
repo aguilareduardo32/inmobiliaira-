@@ -32,12 +32,7 @@ class App extends Component {
           <Route exact path="/addInmueble" render={() => <AddInmueble />} />
           <Route exact path="/addImages" render={() => <AddImages />} />
           <Route exact path="/formaEnviada" render={() => <FormaEnviada />} />
-
-          <Route
-            exact
-            path="/:id"
-            render={() => <DetallesInmuebles {...this.props} />}
-          />
+    <Route exact path="/:id" render={() => <DetallesInmuebles /> } />
         </Switch>
 
         <Footer />

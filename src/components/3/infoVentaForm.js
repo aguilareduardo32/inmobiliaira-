@@ -48,13 +48,13 @@ class InfoForm extends Component {
     render() {
         return(
                  <div>
-                        <div  className="servicios" style={ sectionStyle }>
+                        <div  className="servicios1" style={ sectionStyle }>
                         <br/>
-                                 <h1 > Ofrezco una propiedad</h1>  
-                                 <h2> La venta o alquiler de su propiedad implica mucho más que un aviso en su ventana o una publicación en Internet.
+                        <h1 className="s" >Tengo una propiedad</h1>  
+                        <h2 className="y"> La venta o alquiler de su propiedad implica mucho más que un aviso en su ventana o una publicación en Internet.
                                  <br/><br/>
 
- Nuestro servicio le proporciona total asesoramiento en cada una de las etapas de su operación inmobiliaria.</h2>     
+ Nuestro servicio le proporciona total asesoramiento en cada una de las etapas de su operación inmobiliaria.</h2>    
                         </div>
                         <div className="texxto">
                         <br/><br/>

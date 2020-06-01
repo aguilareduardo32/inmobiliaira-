@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import axios from 'axios';
-
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+import { Link } from "react-router-dom";
+import InmuebleV from './3/InmuebleV'
 
 class InmuebleDetail extends Component {
     constructor(props){
@@ -10,30 +15,39 @@ class InmuebleDetail extends Component {
     }
 
     componentDidMount(){
-        this.getSingleInmueble()
+        this.getSingleInmueble();
+        
     }
+    
+    
 
     getSingleInmueble = () => {
    
         const { params } = this.props.match;
         axios.get(`http://localhost:5000/api/${params.id}`)
-        .then( responseFromApi =>{
-           const theInmueble = responseFromApi.data;
-           this.setState(theInmueble)
-           console.log(theInmueble)
-           
-        }) 
-        .catch((err) => {
-            console.log(err)
-        })
-    }
+                .then( responseFromApi =>{
+                    console.log(responseFromApi.data)
+                    const theInmueble = responseFromApi.data;
+                    this.setState(theInmueble);
+                })
+                .catch((err) => {
+                    console.log(err)
+                })
+            }
 
+            
+    
+   
     render(){
-        return(
-            <div>
-                <h3>{this.state.titulo}</h3>
-            </div>
-        )
+       
+          return(
+              <div>
+                    <InmuebleV inmuebleee={this.state}/>
+                          
+              </div>
+          )
+        
+        
     }
 }
 

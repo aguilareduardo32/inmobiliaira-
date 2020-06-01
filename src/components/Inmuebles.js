@@ -25,6 +25,7 @@ class Inmuebles extends Component {
   }
 
   render() {
+    console.log(this.state.listPropierties)
     if (this.state.listPropierties != "") {
       var primercomponent = (
         <FilterableInmuTable inmuebles={this.state.listPropierties} />

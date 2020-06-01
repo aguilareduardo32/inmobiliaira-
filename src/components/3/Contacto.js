@@ -50,8 +50,8 @@ class Contacto extends Component {
                 <div>
                         <div className="servicios1"  style={ sectionStyle }>
                             <br/>
-                                <h1>En Inmobiliaria Chigaco nos interesa escucharte</h1>
-                                <h2>Si le gustaria mas información sobre nosotros o nuestros servicios mandanos un mensaje en esta forma y contestaremos en brevedad. </h2>
+                                <h1 className="s">En Inmobiliaria Chigaco nos interesa escucharte</h1>
+                                <h2 className="y">Si le gustaria mas información sobre nosotros o nuestros servicios mandanos un mensaje en esta forma y contestaremos en brevedad. </h2>
                         
                         </div>
                         <div>

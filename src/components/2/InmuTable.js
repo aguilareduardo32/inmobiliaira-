@@ -17,7 +17,7 @@ const InmuTable = (props) => {
             baños={item.baños}
             descripcion={item.descripcion}
             metros={item.metros}
-            direccion={item.direccion}
+            direccion={item.calle}
             id={item._id}
             image1={item.image1}
             image2={item.image2}

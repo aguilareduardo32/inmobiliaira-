@@ -2,7 +2,7 @@ import React from 'react';
 
 const FilterBox = (props) => {
     return(
-            <div>
+            <div class="rectangleee">
             <p>Operación</p>
                 <input type='checkbox' defaultChecked name="tipo" value="VENTA" onClick={props.handleChange} onChange={props.handleChange} />
                 <label htmlFor="VENTA">Venta</label><br></br>

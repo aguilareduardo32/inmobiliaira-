@@ -54,8 +54,8 @@ class InfoForms extends Component {
             <div>
                         <div  className="servicios1" style={ sectionStyle }>
                         <br/>
-                                 <h1 > TE AYUDAMOS A ENCONTRAR LA PROPIEDAD QUE ESTÁS BUSCANDO</h1> 
-                                 <h2>Dinos lo que buscas y nos comunicaremos contigo para ofrecerte las mejores opciones.</h2> 
+                                 <h1 className="s" > TE AYUDAMOS A ENCONTRAR LA PROPIEDAD QUE ESTÁS BUSCANDO</h1> 
+                                 <h2 className="y">Dinos lo que buscas y nos comunicaremos contigo para ofrecerte las mejores opciones.</h2> 
                                   </div>
             <div className="formxx">
             <h3>Llene esta forma y uno de nuestros ejecutivos se comunicara con usted.</h3>
