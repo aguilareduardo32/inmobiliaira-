@@ -60,8 +60,8 @@ const InmuRow = (props) => {
   });
 
   return (
-    <div class="pilar">
-      <div class="rectangle">
+    <div className="pilar">
+      <div className="rectangle">
         <div className="imager-gallery-wrapper">
           <ImageGallery
             items={imagesC}
@@ -82,29 +82,37 @@ const InmuRow = (props) => {
           keyBoardControl={true}
           customTransition="all .5"
           transitionDuration={500}
-          containerClass="carousel-container"
+          containerclassName="carousel-container"
           removeArrowOnDeviceType={["tablet", "mobile"]}
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
+          dotListclassName="custom-dot-list-style"
+          itemclassName="carousel-item-padding-40-px"
         >
-          <img  className="imager" src={fotos}></img>
+          <img className="imager" src={fotos}></img>
         </Carousel>
 
-      
-          <div className="desc">
-            <h1>{titulo}</h1>
-        
+        <div className="desc">
+          <h1>{titulo}</h1>
 
-            <p>📍{direccion}</p>
+          <p>📍{direccion}</p>
 
-            <p>recamaras: {recamaras}</p>
-             <p>construidos: {metros}m2</p>
+          <p>recamaras: {recamaras}</p>
+          <p>construidos: {metros}m2</p>
 
-            <h5>${precio}</h5>
-            
-            <Link to={`/${id}`}>   <input className="e"  type="submit" value="Ver mas" /></Link> 
-          </div>
-        
+          <h5>${precio}</h5>
+
+          {/* <Link to={`/${id}`}>   <input className="e"  type="submit" value="Ver mas" /></Link>  */}
+
+          <Link
+            className="e"
+            title={imagesC.length}
+            to={{
+              pathname: `inmueble/${id}`,
+              props,
+            }}
+          >
+            <input className="e" type="submit" value="Ver mas" />
+          </Link>
+        </div>
       </div>
     </div>
   );

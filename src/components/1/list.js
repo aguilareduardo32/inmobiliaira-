@@ -1,166 +1,221 @@
-import React from 'react'
+import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Background from '../../images/casa1.jpeg';
-import { Link } from 'react-router-dom';
+import Background from "../../images/casa1.jpeg";
+import { Link } from "react-router-dom";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 5
+    items: 5,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3
+    items: 3,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2
+    items: 2,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 1
-  }
+    items: 1,
+  },
 };
 
 const List = () => {
-    return (
-        <div className="">
+  return (
+    <div className="">
+      <p className="titulo"> Inmuebles mas vistos</p>
+      <br />
+      <br />
 
-        <p className="titulo"> Inmuebles mas vistos</p>
-        <br/>
-        <br/>
-        
-        <Carousel  swipeable={false}
+      <Carousel
+        swipeable={false}
         draggable={false}
         showDots={false}
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
-       
         autoPlaySpeed={1000}
         keyBoardControl={true}
         customTransition="all .5"
         transitionDuration={500}
-        containerClass="carousel-container"
+        containerclassName="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
-       
-        dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px">
+        dotListclassName="custom-dot-list-style"
+        itemclassName="carousel-item-padding-40-px"
+      >
+        <div className="column">
+          <div className="card">
+            <img className="casa" src={Background} />
+            <h1>Casa en venta pedregal</h1>
+            <br />
+            <h3>320m2 </h3>
+            <h3>
+              {" "}
+              5 habitaciones
+              <br />
+            </h3>
+            <h3>
+              {" "}
+              3 baños
+              <br />
+            </h3>
+            <h3> $ 25,000,000</h3>
+            <br />
+            <Link to="/quiere">
+              <button className="button1">Ver</button>
+            </Link>
+          </div>
+        </div>
 
-            
-           
-            
-            <div className="column">
-                <div className="card">
-                <img className="casa" src={Background}/>
-                <h1>Casa en venta pedregal</h1>
-                <br/>
-                <h3>320m2 </h3>
-                <h3> 5 habitaciones<br/></h3>
-                <h3>  3 baños<br/></h3>
-                <h3> $ 25,000,000</h3>
-                <br/>
-                <Link to='/quiere'><button className="button1">Ver</button></Link>
-                </div>
-            </div>
+        <div className="column">
+          <div className="card">
+            <img className="casa" src={Background} />
+            <h1>Casa en venta pedregal</h1>
+            <br />
+            <h3>320m2 </h3>
+            <h3>
+              {" "}
+              5 habitaciones
+              <br />
+            </h3>
+            <h3>
+              {" "}
+              3 baños
+              <br />
+            </h3>
+            <h3> $ 25,000,000</h3>
+            <br />
+            <Link to="/quiere">
+              <button className="button1">Ver</button>
+            </Link>
+          </div>
+        </div>
 
-          
-            
-            <div className="column">
-                <div className="card">
-                <img className="casa" src={Background}/>
-                <h1>Casa en venta pedregal</h1>
-                <br/>
-                <h3>320m2 </h3>
-                <h3> 5 habitaciones<br/></h3>
-                <h3>  3 baños<br/></h3>
-                <h3> $ 25,000,000</h3>
-                <br/>
-                <Link to='/quiere'><button className="button1">Ver</button></Link>
-                </div>
-            </div>
-            
-            
-            
-            <div className="column">
-                <div className="card">
-                <img className="casa" src={Background}/>
-                <h1>Casa en venta pedregal</h1>
-                <br/>
-                <h3>320m2 </h3>
-                <h3> 5 habitaciones<br/></h3>
-                <h3>  3 baños<br/></h3>
-                <h3> $ 25,000,000</h3>
-                <br/>
-                <Link to='/quiere'><button className="button1">Ver</button></Link>
-                </div>
-            </div>
-            
-           
-            
-            <div className="column">
-                <div className="card">
-                <img className="casa" src={Background}/>
-                <h1>Casa en venta pedregal</h1>
-                <br/>
-                <h3>320m2 </h3>
-                <h3> 5 habitaciones<br/></h3>
-                <h3>  3 baños<br/></h3>
-                <h3> $ 25,000,000</h3>
-                <br/>
-                <Link to='/quiere'><button className="button1">Ver</button></Link>
-                </div>
-            </div>
-           
-            
-            <div className="column">
-                <div className="card">
-                <img className="casa" src={Background}/>
-                <h1>Casa en venta pedregal</h1>
-                <br/>
-                <h3>320m2 </h3>
-                <h3> 5 habitaciones<br/></h3>
-                <h3>  3 baños<br/></h3>
-                <h3> $ 25,000,000</h3>
-                <br/>
-                <Link to='/quiere'><button className="button1">Ver</button></Link>
-                </div>
-            </div>
-         
-            
-            <div className="column">
-                <div className="card">
-                <img className="casa" src={Background}/>
-                <h1>Casa en venta pedregal</h1>
-                <br/>
-                <h3>320m2 </h3>
-                <h3> 5 habitaciones<br/></h3>
-                <h3>  3 baños<br/></h3>
-                <h3> $ 25,000,000</h3>
-                <br/>
-                <Link to='/quiere'><button className="button1">Ver</button></Link>
-                </div>
-            </div>
-           
-            
-            <div className="column">
-                <div className="card">
-                <img className="casa" src={Background}/>
-                <h1>Casa en venta pedregal</h1>
-                <br/>
-                <h3>320m2 </h3>
-                <h3> 5 habitaciones<br/></h3>
-                <h3>  3 baños<br/></h3>
-                <h3> $ 25,000,000</h3>
-                <br/>
-                <Link to='/quiere'><button className="button1">Ver</button></Link>
-                </div>
-            </div>
+        <div className="column">
+          <div className="card">
+            <img className="casa" src={Background} />
+            <h1>Casa en venta pedregal</h1>
+            <br />
+            <h3>320m2 </h3>
+            <h3>
+              {" "}
+              5 habitaciones
+              <br />
+            </h3>
+            <h3>
+              {" "}
+              3 baños
+              <br />
+            </h3>
+            <h3> $ 25,000,000</h3>
+            <br />
+            <Link to="/quiere">
+              <button className="button1">Ver</button>
+            </Link>
+          </div>
+        </div>
 
-            </Carousel>
-</div>
-    )
-}
+        <div className="column">
+          <div className="card">
+            <img className="casa" src={Background} />
+            <h1>Casa en venta pedregal</h1>
+            <br />
+            <h3>320m2 </h3>
+            <h3>
+              {" "}
+              5 habitaciones
+              <br />
+            </h3>
+            <h3>
+              {" "}
+              3 baños
+              <br />
+            </h3>
+            <h3> $ 25,000,000</h3>
+            <br />
+            <Link to="/quiere">
+              <button className="button1">Ver</button>
+            </Link>
+          </div>
+        </div>
 
-export default List 
+        <div className="column">
+          <div className="card">
+            <img className="casa" src={Background} />
+            <h1>Casa en venta pedregal</h1>
+            <br />
+            <h3>320m2 </h3>
+            <h3>
+              {" "}
+              5 habitaciones
+              <br />
+            </h3>
+            <h3>
+              {" "}
+              3 baños
+              <br />
+            </h3>
+            <h3> $ 25,000,000</h3>
+            <br />
+            <Link to="/quiere">
+              <button className="button1">Ver</button>
+            </Link>
+          </div>
+        </div>
+
+        <div className="column">
+          <div className="card">
+            <img className="casa" src={Background} />
+            <h1>Casa en venta pedregal</h1>
+            <br />
+            <h3>320m2 </h3>
+            <h3>
+              {" "}
+              5 habitaciones
+              <br />
+            </h3>
+            <h3>
+              {" "}
+              3 baños
+              <br />
+            </h3>
+            <h3> $ 25,000,000</h3>
+            <br />
+            <Link to="/quiere">
+              <button className="button1">Ver</button>
+            </Link>
+          </div>
+        </div>
+
+        <div className="column">
+          <div className="card">
+            <img className="casa" src={Background} />
+            <h1>Casa en venta pedregal</h1>
+            <br />
+            <h3>320m2 </h3>
+            <h3>
+              {" "}
+              5 habitaciones
+              <br />
+            </h3>
+            <h3>
+              {" "}
+              3 baños
+              <br />
+            </h3>
+            <h3> $ 25,000,000</h3>
+            <br />
+            <Link to="/quiere">
+              <button className="button1">Ver</button>
+            </Link>
+          </div>
+        </div>
+      </Carousel>
+    </div>
+  );
+};
+
+export default List;

@@ -16,6 +16,7 @@ import AddInmueble from "./components/3/AddInmueble";
 
 import { BrowserRouter as Router } from "react-router-dom";
 import AddImages from "./components/AddImages";
+import InmuDe from "./components/3/InmuDe";
 
 class App extends Component {
   render() {
@@ -32,7 +33,12 @@ class App extends Component {
           <Route exact path="/addInmueble" render={() => <AddInmueble />} />
           <Route exact path="/addImages" render={() => <AddImages />} />
           <Route exact path="/formaEnviada" render={() => <FormaEnviada />} />
-    <Route exact path="/:id" render={() => <DetallesInmuebles /> } />
+          <Route exact path="/:id" render={() => <DetallesInmuebles />} />
+          <Route
+            path="/inmueble/:id"
+            component={InmuDe}
+            render={() => <InmuDe />}
+          />
         </Switch>
 
         <Footer />
