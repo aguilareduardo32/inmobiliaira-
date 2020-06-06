@@ -22,10 +22,10 @@
 .s {
   font-size: 50px;
 }
-.y{
+.y {
   font-size: 30px;
 }
-.e{
+.e {
   font-size: 27px;
   margin-top: 13px;
   cursor: pointer;
@@ -66,7 +66,7 @@ a {
   margin-left: 50px;
   text-align: center;
 }
-.first h1{
+.first h1 {
   font-size: 50px;
   margin-top: -90px;
 }
@@ -291,7 +291,7 @@ a {
   text-align: left;
   display: inline-block;
 }
-.servi{
+.servi {
   font-size: 70px;
   text-align: center;
 }
@@ -305,7 +305,6 @@ a {
   margin-top: -18px;
 }
 .card2 {
-  
   display: inline-block;
   margin-top: 0px;
   padding: 16px;
@@ -413,22 +412,21 @@ a {
 .yei {
   cursor: pointer;
 }
-.button1{
+.button1 {
   width: 200px;
   height: 39px;
   cursor: pointer;
   font-size: 20px;
 }
 .button1 p {
-  
 }
 .titulo {
   font-size: 45px;
 }
-.servInfo .servInfoP{
+.servInfo .servInfoP {
   margin-bottom: -50px;
 }
-.ser{
+.ser {
   margin-top: -35px;
 }
 
@@ -498,9 +496,7 @@ a {
 }
 .filtros p {
   margin-top: 15px;
-
 }
-
 
 .inmuebles {
   margin-top: 30px;
@@ -528,7 +524,6 @@ a {
   align-items: center;
 }
 
-
 .casa2 {
   margin-left: -470px;
   margin-top: -13px;
@@ -539,17 +534,16 @@ a {
 .desc {
   margin-top: -40px;
   margin-left: 290px;
-  
+
   text-align: left;
 }
 
 .desc h1 {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 .desc p {
   font-size: 28px;
 }
-
 
 .column3 input {
   width: 300px;
@@ -573,22 +567,15 @@ a {
 
 .imager-gallery-wrapper {
   position: absolute;
-
-
-
 }
-.imager-gallery-wrapper img{
-  
+.imager-gallery-wrapper img {
   width: 490px;
   height: 270px;
-
 }
 .image-gallery-image img {
   height: 200px;
   width: 350px;
 }
-
-
 
 .image-gallery-left-nav .image-gallery-svg,
 .image-gallery-right-nav .image-gallery-svg {
@@ -601,58 +588,43 @@ a {
   top: 5px !important;
 }
 
-
 .pilar2 {
   margin-top: 40px;
-  
-  
-  padding: 0 10px;
-  
 
-  
+  padding: 0 10px;
 }
 
 .imagers {
-
-
   width: 300px;
 }
 
-
-
 .formEsp {
-  
-float: right;
-margin-right: 120px;
-height: 430px;
-  width: 250px;
+  float: right;
+  /*   margin-right: 120px;
+  height: 430px;
+  width: 250px; */
   border-radius: 15px;
   background-color: #f1f1f1;
   margin-top: 30px;
-
 }
 
 .imager-gallery {
   position: absolute;
   width: 500px;
   margin-left: 120px;
-
 }
 
-
 .descc {
- margin-top: 500px;
- text-align: left;
- margin-left: 130px;
+  /* margin-top: 500px; */
+  text-align: left;
+  margin-left: 130px;
 }
 
 .imager {
   margin-top: 50px;
 }
 
-
 .iii {
-  
   width: 200px;
   height: 50px;
 }

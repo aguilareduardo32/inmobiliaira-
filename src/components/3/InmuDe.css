@@ -1,0 +1,18 @@
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  /* min-height: 100% !important; */
+  max-height: 500px;
+}
+.image-gallery-slide .image-gallery-image {
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.imager-gallery {
+  position: absolute;
+  min-width: 500px;
+  margin-left: 120px;
+  max-height: 500px;
+  right: 413px;
+  left: 0px;
+  max-width: 100%;
+}

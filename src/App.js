@@ -41,7 +41,6 @@ class App extends Component {
             component={InmuDe}
             render={() => <InmuDe />}
           />
-        
         </Switch>
 
         <Footer />
