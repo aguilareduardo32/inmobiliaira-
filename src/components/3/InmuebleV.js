@@ -21,10 +21,13 @@ const InmuebleV = (props) => {
             descripcion={inmuebleee.descripcion}
             metros={inmuebleee.metros}
             direccion={inmuebleee.calle}
+            vendedor={inmuebleee.vendedor}
+            telefono={inmuebleee.telefono}
             id={inmuebleee._id}
             image1={inmuebleee.image1}
             image2={inmuebleee.image2}
             image3={inmuebleee.image3}
+            
           />
         
     </div>

@@ -18,10 +18,13 @@ const InmuTable = (props) => {
             descripcion={item.descripcion}
             metros={item.metros}
             direccion={item.calle}
+            vendedor={item.vendedor}
+            telefono={item.telefono}
             id={item._id}
             image1={item.image1}
             image2={item.image2}
             image3={item.image3}
+            
           />
         );
       })}

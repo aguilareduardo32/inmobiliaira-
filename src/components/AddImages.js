@@ -13,7 +13,6 @@ class AddImages extends Component {
       recamaras: "",
        descripcion: "",
       metros: "",
-    
       calle: "",
       precio: "",
       delegacion: "",
@@ -184,7 +183,7 @@ class AddImages extends Component {
             />
             <label>baños</label>
             <input
-              type="text"
+              type="number"
               name="baños"
               value={this.state.baños}
               onChange={(e) => this.handleChange(e)}

@@ -11,13 +11,6 @@ const errorHandler = (err) => {
 export default {
   service,
 
-  handleUpload1(image) {
-    return service
-      .post("/PicUpload", image)
-
-      .then((res) => res.data)
-      .catch(errorHandler);
-  },
 
   handleUpload(image) {
     return service
@@ -26,6 +19,16 @@ export default {
       .then((res) => res.data)
       .catch(errorHandler);
   },
+
+  handleUpload1(image) {
+    return service
+      .post("/PicUpload", image)
+
+      .then((res) => res.data)
+      .catch(errorHandler);
+  },
+
+ 
  
   handleUpload2(image) {
     return service

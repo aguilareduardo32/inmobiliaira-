@@ -483,7 +483,7 @@ a {
 }
 
 .search-bar {
-  height: 30px;
+  height: 20px;
   width: 150px;
 }
 
@@ -537,7 +537,7 @@ a {
 }
 
 .desc {
-  margin-top: -13px;
+  margin-top: -40px;
   margin-left: 290px;
   
   text-align: left;
@@ -602,3 +602,64 @@ a {
 }
 
 
+.pilar2 {
+  margin-top: 40px;
+  
+  
+  padding: 0 10px;
+  
+
+  
+}
+
+.imagers {
+
+
+  width: 300px;
+}
+
+
+
+.formEsp {
+  
+float: right;
+margin-right: 120px;
+height: 430px;
+  width: 250px;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  margin-top: 30px;
+
+}
+
+.imager-gallery {
+  position: absolute;
+  width: 500px;
+  margin-left: 120px;
+
+}
+
+
+.descc {
+ margin-top: 500px;
+ text-align: left;
+ margin-left: 130px;
+}
+
+.imager {
+  margin-top: 50px;
+}
+
+
+.iii {
+  
+  width: 200px;
+  height: 50px;
+}
+
+.ooo {
+  width: 100px;
+  height: 30px;
+  border-radius: 7px;
+  font-size: 19px;
+}

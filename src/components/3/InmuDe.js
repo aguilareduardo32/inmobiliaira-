@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import { Link, Route, Redirect } from "react-router-dom";
+import Axios from "axios";
 
 const responsive = {
   superLargeDesktop: {
@@ -30,9 +31,41 @@ class InmuDe extends Component {
     super(props);
     this.state = {
       inmueble: this.props.location.props,
+      email: "",
+      nombre: "",
+      telefono: "",
+      mensaje: ""
+
     };
     console.log(this.state.inmueble);
   }
+
+  handleFormSubmit = (event) => {
+    event.preventDefault();
+    const email = this.state.email;
+    const nombre = this.state.nombre;
+    const telefono = this.state.telefono;
+    const mensaje = this.state.mensaje;
+    const { params } = this.props.match;
+
+    Axios
+      .post(`http://localhost:5000/api/${params.id}`, {
+        email,
+        nombre,
+        telefono,
+        mensaje,
+
+      })
+      .then(() => {
+          this.props.history.push("/infoesp")
+      })
+      .catch((error) => console.log(error));
+  }
+
+  handleChange = (event) => {
+      const { name, value } = event.target;
+      this.setState({ [name]: value})
+  };
 
   render() {
     if (!this.state.inmueble) {
@@ -45,62 +78,123 @@ class InmuDe extends Component {
       return { original: item, thumbnail: item };
     });
 
-    return (
-      <div className="pilar">
-        <div className="rectangle">
-          {this.state.inmueble.imageCollection &&
-          this.state.inmueble.imageCollection.length > 0 ? (
-            <p> {this.state.inmueble.imageCollection.length}</p>
-          ) : (
-            <div>0</div>
-          )}
+    return ( 
+      <div>
+                <div className="pilar2">
+                
+                
 
-          <div className="imager-gallery-wrapper">
-            <ImageGallery
-              items={imagesC}
-              showPlayButton={false}
-              showFullscreenButton={false}
-              showThumbnails={false}
-              showIndex={true}
-            />
-          </div>
+                    <div className="imager-gallery">
+                      <ImageGallery
+                        items={imagesC}
+                        showPlayButton={false}
+                        showFullscreenButton={false}
+                        showThumbnails={false}   
+                        showIndex={true}
+                      />
+                    </div>
 
-          <Carousel
-            swipeable={true}
-            draggable={false}
-            showDots={false}
-            responsive={responsive}
-            ssr={true} // means to render carousel on server-side.
-            infinite={true}
-            autoPlaySpeed={1000}
-            keyBoardControl={true}
-            customTransition="all .5"
-            transitionDuration={500}
-            containerclassName="carousel-container"
-            removeArrowOnDeviceType={["tablet", "mobile"]}
-            dotListclassName="custom-dot-list-style"
-            itemclassName="carousel-item-padding-40-px"
-          >
-            <img className="imager"></img>
-          </Carousel>
+                    <Carousel
+                      swipeable={true}
+                      draggable={false}
+                      showDots={false}
+                      responsive={responsive}
+                      ssr={true} // means to render carousel on server-side.
+                      infinite={true}
+                      autoPlaySpeed={1000}
+                      keyBoardControl={true}
+                      customTransition="all .5"
+                      transitionDuration={500}
+                      containerclassName="carousel-container"
+                      removeArrowOnDeviceType={["tablet", "mobile"]}
+                      dotListclassName="custom-dot-list-style"
+                      itemclassName="carousel-item-padding-40-px"
+                    >
+                      <img className="imagers"></img>
+                    </Carousel>
+                
 
-          <div className="desc">
-            <h1>{this.state.inmueble.titulo}</h1>
+                     <div className="formEsp ">
+                       <br/>
+                       <br/>
 
-            <p>📍{this.state.inmueble.direccion}</p>
+                        <h3>mensaje al anunciante</h3>
+                        <br/>
 
-            <p>recamaras: {this.state.inmueble.recamaras}</p>
-            <p>construidos: {this.state.inmueble.metros}m2</p>
+                        <form className="inmu-esp"  onSubmit={this.handleFormSubmit}>
 
-            <h5>${this.state.inmueble.precio}</h5>
+                          <label>Email</label>
+                          <br/>
+                          <input 
+                              type="string"
+                              name="email"
+                              value={this.state.email}
+                              onChange={(e) => this.handleChange(e)}
+                              ></input>
+                              <br/>
+                          <label>Nombre</label>
+                          <br/>
+                          <input 
+                              type="string"
+                              name="nombre"
+                              value={this.state.nombre}
+                              onChange={(e) => this.handleChange(e)}
+                              ></input>
+                                <br/>
+                          <label>Telefono</label>
+                          <br/>
+                          <input 
+                              type="string"
+                              name="telefono"
+                              value={this.state.telefono}
+                              onChange={(e) => this.handleChange(e)}
+                              ></input>
+                            <br/>
+                          <label>Mensaje</label>
+                          <br/>
+                                    <input 
+                                        className="iii"
+                                        size="25"
+                                        type="string"
+                                        name="mensaje"
+                                        value={this.state.mensaje}
+                                        onChange={(e) => this.handleChange(e)}
+                                        ></input>
+                          <br/><br/>
+                        <input className="yei ooo" type="submit" value="Enviar" /> 
+                        </form>
+                        <br/>
+                        <p>vendedor: {this.state.inmueble.vendedor}</p>
+                        <p>telefono: {this.state.inmueble.telefono}</p>       
+                      </div>
+              
+               </div>
 
-            <Link to={`/${this.state.inmueble.id}`}>
-              {" "}
-              <input className="e" type="submit" value="Ver mas" />
-            </Link>
-          </div>
-        </div>
-        <img className="imager" src={this.state.inmueble.image1}></img>
+
+                  <br/>
+                  <div className="descc">
+                      <h1>{this.state.inmueble.titulo}</h1>
+
+                      <p>📍{this.state.inmueble.direccion}</p>
+
+                      <p>recamaras: {this.state.inmueble.recamaras}</p>
+                      <p>construidos: {this.state.inmueble.metros}m2</p>
+                      <p>{this.state.inmueble.descripcion}</p>
+                     
+                      
+
+
+                      <h5>${this.state.inmueble.precio}</h5>
+
+                     
+                    </div>
+
+
+
+                  <img className="imager" src={this.state.inmueble.image1}></img>
+              
+
+
       </div>
     );
   }

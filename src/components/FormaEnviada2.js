@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 
-class FormaEnviada extends Component {
+class FormaEnviada2 extends Component {
     
     
     render(){
@@ -14,12 +14,12 @@ class FormaEnviada extends Component {
                     <br/>
                 </div>
                 <div>
-                <Link  to="/"><i className="but">aceptar</i></Link>
+                <Link  to="/inmuebles"><i className="but">aceptar</i></Link>
                 </div>
             </div>
     )
     }
 }
 
-export default withRouter(FormaEnviada);
+export default withRouter(FormaEnviada2);
 

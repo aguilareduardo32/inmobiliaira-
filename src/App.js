@@ -10,6 +10,7 @@ import Inmuebles from "./components/Inmuebles";
 import InfoSoli from "./components/InfoSoli";
 import InfoComRen from "./components/InfoComRen";
 import FormaEnviada from "./components/FormaEnviada";
+import FormaEnviada2 from "./components/FormaEnviada2";
 import ContactoBase from "./components/ContactoBase";
 import DetallesInmuebles from "./components/InmuebleDetails";
 import AddInmueble from "./components/3/AddInmueble";
@@ -33,12 +34,14 @@ class App extends Component {
           <Route exact path="/addInmueble" render={() => <AddInmueble />} />
           <Route exact path="/addImages" render={() => <AddImages />} />
           <Route exact path="/formaEnviada" render={() => <FormaEnviada />} />
+          <Route exact path="/infoesp" render={() => <FormaEnviada2 />} />
           <Route exact path="/:id" render={() => <DetallesInmuebles />} />
           <Route
             path="/inmueble/:id"
             component={InmuDe}
             render={() => <InmuDe />}
           />
+        
         </Switch>
 
         <Footer />

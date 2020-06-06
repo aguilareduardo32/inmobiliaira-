@@ -34,12 +34,16 @@ const InmuRow = (props) => {
     metros,
     direccion,
     precio,
+    vendedor,
+    telefono,
     image1,
     image2,
     image3,
     fotos,
     id,
     imageCollection,
+    
+
   } = props;
 
   /* const images = [
