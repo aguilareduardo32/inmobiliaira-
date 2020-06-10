@@ -438,7 +438,7 @@ a {
   cursor: pointer;
 }
 .button1 {
-  width: 100%;
+  width: 50%;
   height: 39px;
   cursor: pointer;
   font-size: 20px;
@@ -533,9 +533,15 @@ a {
   font-size: 20px;
 }
 
-.search-bar {
+/* .search-bar {
+  height: 20px;
+  max-width: 150px;
+} */
+
+.filtros input {
   /* height: 20px;
-  width: 150px; */
+  max-width: 150px !important; */
+  width: 100%;
 }
 
 .filtros {
@@ -654,13 +660,12 @@ a {
 }
 
 .formEsp {
-  /* float: right; */
-  /*   margin-right: 120px;
-  height: 430px;
-  width: 250px; */
   border-radius: 15px;
   background-color: #f1f1f1;
   margin-top: 30px;
+}
+.formEsp2 {
+  display: none;
 }
 
 .imager-gallery {
@@ -693,4 +698,52 @@ a {
 }
 .row {
   margin: 0px !important;
+}
+
+@media screen and (max-width: 458px) {
+  .ser {
+    padding: 0px;
+  }
+  .servicios1 h2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 7vw;
+  }
+  .card2 p {
+    font-size: 6vw;
+  }
+
+  .button1 {
+    width: 80%;
+    max-height: 39px;
+    cursor: pointer;
+    font-size: 6vw;
+    margin-bottom: 10px;
+  }
+  .servi {
+    font-size: 8vw;
+    text-align: center;
+  }
+  .titulo {
+    font-size: 8vw;
+  }
+  .Xcard * {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .formEsp {
+    border-radius: 15px;
+    background-color: #f1f1f1;
+    margin-top: 30px;
+    display: none;
+  }
+
+  .formEsp2 {
+    border-radius: 15px;
+    background-color: #f1f1f1;
+    margin-top: 30px;
+    display: block;
+  }
 }

@@ -31,6 +31,13 @@ a:hover {
     font-weight: bold;
   }
 }
+@media screen and (max-width: 458px) {
+  .firstBox h1 {
+    font-size: 5.8vw !important;
+    color: black;
+    font-weight: bold;
+  }
+}
 .container {
   height: 150%;
   display: flex;

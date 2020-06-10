@@ -188,6 +188,63 @@ class InmuDe extends Component {
             <div className="col-12">
               <img className="imager" src={this.state.inmueble.image1}></img>
             </div>
+            <div className="col-12">
+              <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4 col-xl-2">
+                <div className="formEsp2 ">
+                  <br />
+                  <br />
+
+                  <h3>mensaje al anunciante</h3>
+                  <br />
+
+                  <form className="inmu-esp" onSubmit={this.handleFormSubmit}>
+                    <label>Email</label>
+                    <br />
+                    <input
+                      type="string"
+                      name="email"
+                      value={this.state.email}
+                      onChange={(e) => this.handleChange(e)}
+                    ></input>
+                    <br />
+                    <label>Nombre</label>
+                    <br />
+                    <input
+                      type="string"
+                      name="nombre"
+                      value={this.state.nombre}
+                      onChange={(e) => this.handleChange(e)}
+                    ></input>
+                    <br />
+                    <label>Telefono</label>
+                    <br />
+                    <input
+                      type="string"
+                      name="telefono"
+                      value={this.state.telefono}
+                      onChange={(e) => this.handleChange(e)}
+                    ></input>
+                    <br />
+                    <label>Mensaje</label>
+                    <br />
+                    <input
+                      className="iii"
+                      size="25"
+                      type="string"
+                      name="mensaje"
+                      value={this.state.mensaje}
+                      onChange={(e) => this.handleChange(e)}
+                    ></input>
+                    <br />
+                    <br />
+                    <input className="yei ooo" type="submit" value="Enviar" />
+                  </form>
+                  <br />
+                  <p>vendedor: {this.state.inmueble.vendedor}</p>
+                  <p>telefono: {this.state.inmueble.telefono}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

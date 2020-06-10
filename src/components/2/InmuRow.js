@@ -65,7 +65,10 @@ const InmuRow = (props) => {
     <div className="pilar">
       <div className="rectangle">
         <div className="row">
-          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div
+            className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12"
+            style={{ padding: "0" }}
+          >
             <div className="imager-gallery-wrapper">
               <ImageGallery
                 items={imagesC}

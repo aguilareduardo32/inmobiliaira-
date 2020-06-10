@@ -7,8 +7,7 @@ import Background from "../images/fondo1.webp";
 var sectionStyle = {
   backgroundImage: `url(${Background})`,
   backgroundRepeat: "no-repeat",
-  // backgroundSize: "100% 100%",
-  backgroundSize: "100%",
+  backgroundSize: "100% 100%",
   /* height: "450px", */
 
   opacity: 0.9,

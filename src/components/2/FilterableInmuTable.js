@@ -119,7 +119,10 @@ class FilterableInmuTable extends Component {
         style={{ marginLeft: "20px", marginRight: "20px" }}
       >
         <div className="row">
-          <div className="col-lg-3 col-md-3 col-xl-3 col-sm-12 col-xs-12 text-center filtros">
+          <div
+            className="col-lg-3 col-md-3 col-xl-3 col-sm-12 col-xs-12 text-center filtros"
+            style={{ marginBottom: "15px" }}
+          >
             <SearchBar
               handleChange={this.handleChange}
               handleChangeMin={this.handleMinChange}
