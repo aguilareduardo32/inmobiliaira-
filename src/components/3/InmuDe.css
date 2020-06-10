@@ -1,17 +1,22 @@
-.image-gallery-content .image-gallery-slide .image-gallery-image {
+.Ximager-gallery
+  .image-gallery-content
+  .image-gallery-slide
+  .image-gallery-image {
   /* min-height: 100% !important; */
-  max-height: 500px;
+  height: 100%;
+  max-height: fit-content;
 }
 .image-gallery-slide .image-gallery-image {
   width: 100% !important;
   object-fit: cover !important;
+  height: 100%;
 }
 
 .imager-gallery {
   position: absolute;
   min-width: 500px;
   margin-left: 120px;
-  max-height: 500px;
+  max-height: 100% /* 500px */;
   right: 413px;
   left: 0px;
   max-width: 100%;

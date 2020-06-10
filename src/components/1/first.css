@@ -1,0 +1,65 @@
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none !important;
+}
+.firstBox {
+  border: 5px solid black;
+  max-width: 300px;
+  padding: 17%;
+  margin-top: 25%;
+}
+
+.firstBox h1 {
+  font-size: 1.3em !important;
+  color: black;
+  font-weight: bold;
+}
+@media screen and (max-width: 588px) {
+  .firstBox {
+    border: 5px solid black;
+    max-width: 300px;
+    padding: 17%;
+    margin-top: 50%;
+    max-height: 188px;
+  }
+
+  .firstBox h1 {
+    font-size: 0.8em !important;
+    color: black;
+    font-weight: bold;
+  }
+}
+.container {
+  height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .navbar-nav a:not(:first-child):before {
+  content: " | ";
+  color: black;
+}
+ */
+.navbar-nav a {
+  font-size: 1.2rem !important;
+  text-align: right;
+  color: black !important;
+}
+
+.navbar-nav a:hover {
+  color: silver !important;
+}
+
+@media screen and (min-width: 1288px) {
+  .navbar-nav a {
+    font-size: 2.2rem !important;
+    text-align: right;
+    color: black !important;
+  }
+}
+
+/* .react-multi-carousel-list {
+  overflow: visible !important;
+} */

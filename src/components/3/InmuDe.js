@@ -78,15 +78,12 @@ class InmuDe extends Component {
 
     return (
       <div>
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-          crossOrigin="anonymous"
-        />
         <div className="Xcontainer">
           <div className="row" style={{ width: "100%" }}>
-            <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8 col-xl-10">
+            <div
+              className="col-sm-12 col-xs-12 col-md-8 col-lg-8 col-xl-10"
+              style={{ padding: "0px", margin: "0px" }}
+            >
               <div className="pilar2">
                 <div className="Ximager-gallery">
                   <ImageGallery

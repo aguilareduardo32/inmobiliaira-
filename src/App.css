@@ -2,8 +2,6 @@
   text-align: center;
   margin: 0;
 }
-.body {
-}
 
 .nav-style {
   text-align: center;
@@ -24,6 +22,17 @@
 }
 .y {
   font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .s {
+    font-size: 7vw;
+    margin-top: 0px !important;
+  }
+  .y {
+    font-size: 5vw;
+    margin-top: 0px !important;
+  }
 }
 .e {
   font-size: 27px;
@@ -142,7 +151,7 @@ a {
   text-align: left;
   background-color: grey;
   color: white;
-  height: 50px;
+  /* height: 50px; */
 
   bottom: 0;
   bottom: -100px;
@@ -166,11 +175,11 @@ a {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  /* padding: 16px; */
   text-align: center;
   background-color: #f1f1f1;
   width: 370px;
-  height: 390px;
+  /* height: 390px; */
 }
 
 .row {
@@ -178,15 +187,15 @@ a {
   position: relative;
 }
 .casa {
-  margin-left: -13px;
+  /* margin-left: -13px;
   margin-top: -13px;
   height: 161px;
-  width: 278px;
+  width: 278px; */
 }
 @media screen and (max-width: 1688px) {
   .card {
     width: 300px; /* The width is 100%, when the viewport is 800px or smaller */
-    height: 300px;
+    /* height: 300px; */
     font-size: medium;
   }
 }
@@ -260,20 +269,20 @@ a {
 }
 .formxx {
   background: #fafafa;
-  padding: 30px;
+  /* padding: 30px;
   margin: 50px auto;
-
-  height: 450px;
+  height: 450px; */
 }
 
 .texxto {
   text-align: justify;
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 .texxto h1 {
   text-align: center;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .info h1 h2 p {
@@ -290,33 +299,49 @@ a {
 .servicios1 {
   text-align: left;
   display: inline-block;
+  /* margin: 8%; */
 }
 .servi {
-  font-size: 70px;
+  font-size: 45px;
+  /* font-size: 4.5vw; */
   text-align: center;
+  /* font-weight: bold; */
 }
-.nou {
+/* .nou {
   margin-bottom: 150px;
-}
+} */
 .serv1 {
-  width: 524px;
-  height: 300px;
-  margin-left: -16px;
-  margin-top: -18px;
+  /* max-width: 524px; */
+  max-height: 300px;
+  width: 100%;
+  /* margin-left: -16px;
+  margin-top: -18px; */
 }
 .card2 {
-  display: inline-block;
+  /* padding: 16px; */
+  border: 2px solid black;
+  height: 100%;
+  /* display: inline-block;
   margin-top: 0px;
-  padding: 16px;
   text-align: center;
   background-color: transparent;
   width: 490px;
   height: 500px;
-  border: 2px solid black;
   float: left;
-  margin: 27px;
+  margin: 27px; */
+}
+.ser {
+  padding: 20px;
+}
+.row {
+  display: flex; /* equal height of the children */
 }
 
+.col {
+  flex: 1; /* additionally, equal width */
+  /* padding: 1em;
+  border: solid; */
+}
 .dos {
   margin-right: 80px;
   margin-left: -130px;
@@ -388,9 +413,9 @@ a {
 .slick-current {
   opacity: 1;
 }
-a {
+/* a {
   width: 70px;
-}
+} */
 .but {
   background-color: Transparent;
   color: black;
@@ -413,29 +438,44 @@ a {
   cursor: pointer;
 }
 .button1 {
+  width: 100%;
+  height: 39px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.Xcard .button1 {
   width: 200px;
   height: 39px;
   cursor: pointer;
   font-size: 20px;
 }
-.button1 p {
+
+@media screen and (max-width: 504px) {
+  .button1 {
+    width: 100%;
+    height: 39px;
+    cursor: pointer;
+    font-size: 20px;
+  }
 }
+
 .titulo {
   font-size: 45px;
 }
 .servInfo .servInfoP {
   margin-bottom: -50px;
 }
-.ser {
+/* .ser {
   margin-top: -35px;
-}
+} */
 
 .column2 {
-  margin-left: 65px;
+  /* margin-left: 65px; */
   align-items: center;
 
   display: inline-block;
-  padding: 0 10px;
+  /* padding: 0 10px; */
 }
 .column2 select {
   width: 400px;
@@ -444,32 +484,45 @@ a {
 }
 .column2 input {
   display: block;
-
   margin: 10px 0 0 0;
   align-items: center;
   text-align: center;
-
-  width: 400px;
+  min-width: 400px;
+  max-width: 100%;
   height: 30px;
 }
+@media screen and (max-width: 600px) {
+  .column2 select {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  .column2 input {
+    display: block;
+    margin: 10px 0 0 0;
+    align-items: center;
+    text-align: center;
+    min-width: 300px;
+    max-width: 100%;
+    height: 30px;
+  }
+}
+
 .column3 {
   margin-top: 20px;
-
   align-items: center;
   display: block;
   list-style: none;
-
   padding: 0 10px;
 }
 .column3 input {
   padding: 0;
-
   list-style: none;
   margin: 10px 0 0 0;
   align-items: center;
   text-align: center;
-
-  width: 200px;
+  min-width: 200px;
+  max-width: 100%;
   height: 50px;
 }
 .info-form {
@@ -481,47 +534,49 @@ a {
 }
 
 .search-bar {
-  height: 20px;
-  width: 150px;
+  /* height: 20px;
+  width: 150px; */
 }
 
 .filtros {
   float: left;
-  margin-top: 90px;
-  margin-left: -230px;
-  height: 400px;
+  /* margin-top: 90px; */
+  /* margin-left: -230px; */
+  /* height: 400px;*/
   width: 250px;
   border-radius: 15px;
   background-color: #f1f1f1;
 }
+
 .filtros p {
   margin-top: 15px;
 }
 
 .inmuebles {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   display: inline-block;
-  margin-left: -150px;
+  /* margin-left: -150px; */
+  width: 100%;
 }
 
 .pilar {
-  margin-top: 40px;
-
+  /* margin-top: 40px; */
   align-items: center;
-
-  padding: 0 10px;
-  margin-left: 25px;
+  /* padding: 0 10px; */
+  /*  margin-left: 25px; */
+  padding-bottom: 10px;
+  border-radius: 15px;
 }
 
 .rectangle {
   border-radius: 15px;
-
   display: inline-block;
   background-color: #f1f1f1;
-  width: 770px;
-  height: 270px;
+  /* width: 770px;
+  height: 270px; */
   position: relative;
   align-items: center;
+  width: 100%;
 }
 
 .casa2 {
@@ -532,8 +587,8 @@ a {
 }
 
 .desc {
-  margin-top: -40px;
-  margin-left: 290px;
+  /* margin-top: -40px;
+  margin-left: 290px; */
 
   text-align: left;
 }
@@ -566,7 +621,7 @@ a {
 }
 
 .imager-gallery-wrapper {
-  position: absolute;
+  /* position: absolute; */
 }
 .imager-gallery-wrapper img {
   width: 490px;
@@ -599,7 +654,7 @@ a {
 }
 
 .formEsp {
-  float: right;
+  /* float: right; */
   /*   margin-right: 120px;
   height: 430px;
   width: 250px; */
@@ -617,11 +672,12 @@ a {
 .descc {
   /* margin-top: 500px; */
   text-align: left;
-  margin-left: 130px;
+  margin-left: 30px;
 }
 
 .imager {
   margin-top: 50px;
+  width: 100%;
 }
 
 .iii {
@@ -634,4 +690,7 @@ a {
   height: 30px;
   border-radius: 7px;
   font-size: 19px;
+}
+.row {
+  margin: 0px !important;
 }
