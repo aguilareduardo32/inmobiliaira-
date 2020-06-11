@@ -123,7 +123,7 @@ class FilterableInmuTable extends Component {
           <div
             className="col-lg-3 col-md-3 col-xl-2 col-sm-12 col-xs-12 text-center filtros"
             style={{
-              margin: "15px",
+              marginBottom: "15px",
               marginTop: "0",
               height: "-webkit-fill-available",
               height: "100%",

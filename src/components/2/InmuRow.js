@@ -66,8 +66,9 @@ const InmuRow = (props) => {
       <div className="rectangle">
         <div className="row">
           <div
-            className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12"
-            style={{ padding: "0" }}
+            className="imgHolder"
+            /* className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12" */
+            /* style={{ padding: "0" }} */
           >
             <div className="imager-gallery-wrapper">
               <ImageGallery
@@ -97,19 +98,24 @@ const InmuRow = (props) => {
               <img className="imager" src={fotos}></img>
             </Carousel>
           </div>
-          <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
+          <div /* className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12" */
+          >
             <div className="desc text-left">
               <h1>{titulo}</h1>
-
+              <p>
+                📍{direccion}
+                <br />
+                recamaras: {recamaras}
+                <br />
+                construidos: {metros}m2
+                <br />
+                <h5>${precio}</h5>
+              </p>
+              {/* <h1>{titulo}</h1>
               <p>📍{direccion}</p>
-
               <p>recamaras: {recamaras}</p>
               <p>construidos: {metros}m2</p>
-
-              <h5>${precio}</h5>
-
-              {/* <Link to={`/${id}`}>   <input className="e"  type="submit" value="Ver mas" /></Link>  */}
-
+              <h5>${precio}</h5> */}
               <Link
                 className="e"
                 title={imagesC.length}
