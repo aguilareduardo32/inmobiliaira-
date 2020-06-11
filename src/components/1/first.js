@@ -7,7 +7,7 @@ var sectionStyle = {
   backgroundImage: `url(${Background})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "100% 100%",
-  minHeight: "45vw",
+  minHeight: "39vw",
   margin: "0",
   color: "black",
 };
@@ -32,7 +32,7 @@ const First = () => {
         <div className="col-6">
           <Link to="/informesVenta">
             {" "}
-            <div className="firstBox">
+            <div className="firstBox num2">
               <h1>
                 VENDER <br />O <br />
                 ARRENDAR <br />

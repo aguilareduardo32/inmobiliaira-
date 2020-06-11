@@ -7,7 +7,8 @@ var sectionStyle = {
   backgroundImage: `url(${Background})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "100% 100%",
-  height: "45vw",
+  /* height: "45vw", */
+  maxHeight: "450px",
   opacity: 0.9,
   margin: "0",
   color: "black",

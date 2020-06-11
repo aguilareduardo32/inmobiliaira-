@@ -78,10 +78,10 @@ class InmuDe extends Component {
 
     return (
       <div>
-        <div className="Xcontainer" style={{ margin: "0 5%" }}>
+        <div className="Xcontainer" style={{ margin: "-50px 5%" }}>
           <div className="row" style={{ width: "100%" }}>
             <div
-              className="col-sm-12 col-xs-12 col-md-8 col-lg-8 col-xl-10"
+              className="col-sm-12 col-xs-12 col-md-8 col-lg-8 col-xl-8"
               style={{ padding: "0px", margin: "0px" }}
             >
               <div className="pilar2">
@@ -115,7 +115,7 @@ class InmuDe extends Component {
                 </Carousel>
               </div>
             </div>
-            <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4 col-xl-2">
+            <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4 col-xl-4">
               <div className="formEsp ">
                 <br />
                 <br />

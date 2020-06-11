@@ -4,17 +4,26 @@ a {
 a:hover {
   text-decoration: none !important;
 }
-.firstBox {
+/* .firstBox {
   border: 10px solid black;
-  /* max-width: 300px; */
-  /* max-width: 60%; */
-  /* padding: 17%; */
+  
   margin-top: 25%;
   margin: 9vw;
+} */
+
+.firstBox {
+  border: 10px solid black;
+  margin-top: 14%;
+  margin-left: 11vw;
+  margin-right: 3vw;
+}
+.num2 {
+  margin-left: 6vw;
+  margin-right: 7vw;
 }
 
 .firstBox h1 {
-  font-size: 3vw !important;
+  font-size: 4vw !important;
   color: black;
   font-weight: bold;
 }
@@ -74,7 +83,7 @@ a:hover {
 
 @media screen and (min-width: 1288px) {
   .navbar-nav a {
-    font-size: 2.2rem !important;
+    font-size: 2.4vw !important;
     text-align: right;
     color: black !important;
   }

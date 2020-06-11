@@ -66,7 +66,7 @@ const InmuRow = (props) => {
       <div className="rectangle">
         <div className="row">
           <div
-            className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12"
+            className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12"
             style={{ padding: "0" }}
           >
             <div className="imager-gallery-wrapper">
@@ -97,7 +97,7 @@ const InmuRow = (props) => {
               <img className="imager" src={fotos}></img>
             </Carousel>
           </div>
-          <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
             <div className="desc text-left">
               <h1>{titulo}</h1>
 

@@ -117,12 +117,17 @@ class FilterableInmuTable extends Component {
       <div
         className="xcontainer"
         /* style={{ marginLeft: "20px", marginRight: "20px" }} */
-        style={{ margin: "0 8% 0 8%" }}
+        style={{ margin: "0 2%" }}
       >
         <div className="row">
           <div
             className="col-lg-3 col-md-3 col-xl-2 col-sm-12 col-xs-12 text-center filtros"
-            style={{ margin: "15px", height: "fit-content" }}
+            style={{
+              margin: "15px",
+              marginTop: "0",
+              height: "-webkit-fill-available",
+              height: "100%",
+            }}
           >
             <SearchBar
               handleChange={this.handleChange}

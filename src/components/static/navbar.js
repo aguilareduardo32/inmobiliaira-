@@ -20,11 +20,11 @@ const navbar = () => {
     <div>
       <Navbar bg="transparent" expand="lg">
         <Navbar.Brand href="/">
-          <img className="Xlogo" src={Background} />
+          <img className="logo" src={Background} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <Nav className="xmr-auto">
+          <Nav className="Xmr-auto">
             <Nav.Link href="/inmuebles">Inmuebles en venta o renta</Nav.Link>
             <Nav.Link href="/informesVenta">Vende o renta tu inmueble</Nav.Link>
             <Nav.Link href="/contactoBase">Contacto</Nav.Link>
@@ -32,23 +32,24 @@ const navbar = () => {
         </Navbar.Collapse>
       </Navbar>
 
-      {/* <Link to="/">
-        {" "}
-        <img className="logo" src={Background} />
-      </Link>
-      <ul>
-        <li>
-          <Link to="/inmuebles">Inmuebles en venta o renta</Link>
-        </li>
-        <li>
-          <Link to="/informesVenta">Vende o renta tu inmueble</Link>
-        </li>
+      {/* <nav>
+        <Link to="/">
+          {" "}
+          <img className="logo" src={Background} />
+        </Link>
+        <ul>
+          <li>
+            <Link to="/inmuebles">Inmuebles en venta o renta</Link>
+          </li>
+          <li>
+            <Link to="/informesVenta">Vende o renta tu inmueble</Link>
+          </li>
 
-        <li>
-          <Link to="/contactoBase">Contacto</Link>
-        </li>
-      </ul>
-    </nav> */}
+          <li>
+            <Link to="/contactoBase">Contacto</Link>
+          </li>
+        </ul>
+      </nav> */}
     </div>
   );
 };
