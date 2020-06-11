@@ -78,7 +78,7 @@ a {
   line-height: 0 !important;
 }
 .home {
-  margin-top: -50px;
+  /* margin-top: -50px; */
 }
 .first {
   display: inline-block;
@@ -813,6 +813,6 @@ input[type="number"] {
   }
 }
 
-.react-multi-carousel-list {
+.pilar .rectangle .react-multi-carousel-list {
   display: none !important;
 }
