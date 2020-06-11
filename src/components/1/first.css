@@ -5,35 +5,48 @@ a:hover {
   text-decoration: none !important;
 }
 .firstBox {
-  border: 5px solid black;
-  max-width: 300px;
-  padding: 17%;
+  border: 10px solid black;
+  /* max-width: 300px; */
+  /* max-width: 60%; */
+  /* padding: 17%; */
   margin-top: 25%;
+  margin: 9vw;
 }
 
 .firstBox h1 {
-  font-size: 1.3em !important;
+  font-size: 3vw !important;
   color: black;
   font-weight: bold;
 }
+/* 
+.firstBox {
+  border: 10px solid black;
+  width: 200px;
+  margin: 90px;
+}
+
+.firstBox h1 {
+  font-size: 1.5rem !important;
+} */
+
 @media screen and (max-width: 588px) {
   .firstBox {
     border: 5px solid black;
     max-width: 300px;
-    padding: 17%;
+    /* padding: 17%; */
     margin-top: 50%;
     max-height: 188px;
   }
 
   .firstBox h1 {
-    font-size: 0.8em !important;
+    /* font-size: 0.8em !important; */
     color: black;
     font-weight: bold;
   }
 }
 @media screen and (max-width: 458px) {
   .firstBox h1 {
-    font-size: 5.8vw !important;
+    /* font-size: 5.8vw !important; */
     color: black;
     font-weight: bold;
   }

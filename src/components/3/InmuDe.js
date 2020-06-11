@@ -78,7 +78,7 @@ class InmuDe extends Component {
 
     return (
       <div>
-        <div className="Xcontainer">
+        <div className="Xcontainer" style={{ margin: "0 5%" }}>
           <div className="row" style={{ width: "100%" }}>
             <div
               className="col-sm-12 col-xs-12 col-md-8 col-lg-8 col-xl-10"

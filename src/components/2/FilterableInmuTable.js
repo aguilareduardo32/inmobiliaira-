@@ -116,12 +116,13 @@ class FilterableInmuTable extends Component {
     return (
       <div
         className="xcontainer"
-        style={{ marginLeft: "20px", marginRight: "20px" }}
+        /* style={{ marginLeft: "20px", marginRight: "20px" }} */
+        style={{ margin: "0 8% 0 8%" }}
       >
         <div className="row">
           <div
-            className="col-lg-3 col-md-3 col-xl-3 col-sm-12 col-xs-12 text-center filtros"
-            style={{ marginBottom: "15px" }}
+            className="col-lg-3 col-md-3 col-xl-2 col-sm-12 col-xs-12 text-center filtros"
+            style={{ margin: "15px", height: "fit-content" }}
           >
             <SearchBar
               handleChange={this.handleChange}
@@ -135,7 +136,7 @@ class FilterableInmuTable extends Component {
             />
           </div>
           <div
-            className="col-lg-9 col-md-9 col-xl-9 col-sm-12 col-xs-12 text-left"
+            className="col-lg-8 col-md-8 col-xl-9 col-sm-12 col-xs-12 text-left"
             style={{ padding: "0" }}
           >
             <ImnuTable className="inmuebles" inmuebles={inmuebles} />

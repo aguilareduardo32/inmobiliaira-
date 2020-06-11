@@ -25,7 +25,7 @@ const responsive = {
 
 const List = () => {
   return (
-    <div className="">
+    <div className="cardHolder">
       <div className="row">
         <div className="col-12">
           <p className="titulo"> Inmuebles mas vistos</p>

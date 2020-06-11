@@ -7,26 +7,38 @@ var sectionStyle = {
   backgroundImage: `url(${Background})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "100% 100%",
-  minHeight: "500px",
+  minHeight: "45vw",
+  margin: "0",
+  color: "black",
 };
 
 const First = () => {
   return (
     <div className="servicios2" style={sectionStyle}>
       <div className="row" style={{ height: "100%" }}>
-        <div className="container col-6">
+        <div className="col-6">
           <Link to="/informesComRen">
             {" "}
             <div className="firstBox">
-              <h1>COMPRAR O RENTAR UN INMUEBLE</h1>
+              <h1>
+                COMPRAR <br />O <br />
+                RENTAR <br />
+                UN <br />
+                INMUEBLE
+              </h1>
             </div>
           </Link>
         </div>
-        <div className="container col-6">
+        <div className="col-6">
           <Link to="/informesVenta">
             {" "}
             <div className="firstBox">
-              <h1>VENDER O ARRENDAR UN INMUEBLE</h1>
+              <h1>
+                VENDER <br />O <br />
+                ARRENDAR <br />
+                UN <br />
+                INMUEBLE
+              </h1>
             </div>
           </Link>
         </div>

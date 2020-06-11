@@ -18,7 +18,7 @@ const Home = () => {
           </div>
         </div>
         <div className="row">
-          <div class="col text-center">
+          <div class="col-6 text-center">
             <div className="card2 nou">
               <img className="serv1" src={Background} />
               <div className="ser">
@@ -38,7 +38,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class="col text-center">
+          <div class="col-6 text-center">
             <div className="card2">
               <img className="serv1" src={Background1} />
               <div className="ser">

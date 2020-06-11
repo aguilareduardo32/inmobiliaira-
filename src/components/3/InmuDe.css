@@ -4,7 +4,7 @@
   .image-gallery-image {
   /* min-height: 100% !important; */
   height: 100%;
-  max-height: fit-content;
+  /* max-height: fit-content; */
 }
 .image-gallery-slide .image-gallery-image {
   width: 100% !important;
@@ -20,4 +20,8 @@
   right: 413px;
   left: 0px;
   max-width: 100%;
+}
+
+.inmu-esp input {
+  width: 80%;
 }

@@ -9,7 +9,9 @@ var sectionStyle = {
   backgroundRepeat: "no-repeat",
   backgroundSize: "100% 100%",
   /* height: "450px", */
-
+  minHeight: "45vw",
+  margin: "0",
+  color: "black",
   opacity: 0.9,
 };
 

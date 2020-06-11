@@ -7,9 +7,10 @@ var sectionStyle = {
   backgroundImage: `url(${Background})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "100% 100%",
-  /*height: "450px", */
-
+  height: "45vw",
   opacity: 0.9,
+  margin: "0",
+  color: "black",
 };
 
 class Contacto extends Component {
