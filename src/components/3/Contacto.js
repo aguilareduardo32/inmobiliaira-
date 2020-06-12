@@ -29,7 +29,7 @@ class Contacto extends Component {
     const mensaje = this.state.mensaje;
 
     axios
-      .post("http://localhost:5000/api/contacto", {
+      .post("http://localhost:5000/api/in/contacto", {
         nombre,
         telefono,
         email,

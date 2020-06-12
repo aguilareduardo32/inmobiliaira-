@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Background from "../../images/logo.png";
+import Background from "../../images/yes.png";
 import {
   Navbar,
   Nav,
@@ -17,7 +17,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const navbar = () => {
   return (
-    <div>
+    <div className="naav">
       <Navbar bg="transparent" expand="lg">
         <Navbar.Brand href="/">
           <img className="logo" src={Background} />
@@ -25,9 +25,9 @@ const navbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="Xmr-auto">
-            <Nav.Link href="/inmuebles">Inmuebles en venta o renta</Nav.Link>
-            <Nav.Link href="/informesVenta">Vende o renta tu inmueble</Nav.Link>
-            <Nav.Link href="/contactoBase">Contacto</Nav.Link>
+            <Nav.Link href="/inmuebles"><p>Inmuebles en venta o renta</p></Nav.Link>
+            <Nav.Link href="/informesVenta"><p>Vende o renta tu inmueble</p></Nav.Link>
+            <Nav.Link href="/contactoBase"><p>Contacto</p></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

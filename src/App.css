@@ -54,10 +54,14 @@
   float: left;
 }
 
+.naav p{
+  font-size: 30px;
+}
+
 a {
   color: black;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 50px;
 }
 * {
   margin: 0;
@@ -66,13 +70,14 @@ a {
   /* float: left;
   margin-top: -69px; */
   float: left;
-  margin-top: -82px;
-  width: 121%;
-  margin-left: -20px;
+  margin-top: -12px;
+  width: 50%;
+  
+  margin-left: -10px;
 }
 #basic-navbar-nav {
-  margin-top: -32px;
-  padding-right: 40px;
+
+ /* padding-right: 40px; */
 }
 .navbar-light .navbar-nav .nav-link {
   line-height: 0 !important;
@@ -632,7 +637,7 @@ input[type="number"] {
 .desc {
   /* margin-top: -40px;
   margin-left: 290px; */
-
+  
   text-align: left;
 }
 
@@ -715,6 +720,7 @@ input[type="number"] {
   /* margin-top: 500px; */
   text-align: left;
   margin-left: 30px;
+  margin-top: -50px;
 }
 
 .imager {

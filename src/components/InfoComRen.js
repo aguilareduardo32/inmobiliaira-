@@ -45,7 +45,7 @@ class InfoForms extends Component {
     const comentarios = this.state.comentarios;
 
     axios
-      .post("http://localhost:5000/api/infoCompra", {
+      .post("http://localhost:5000/api/in/infoCompra", {
         tipo,
         precioMax,
         formaDeCompra,

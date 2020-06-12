@@ -40,7 +40,7 @@ class InfoForm extends Component {
     const comentarios = this.state.comentarios;
 
     axios
-      .post("http://localhost:5000/api/infoServ", {
+      .post("http://localhost:5000/api/in/infoServ", {
         nombre,
         correo,
         telefono,

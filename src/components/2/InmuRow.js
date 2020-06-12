@@ -103,19 +103,16 @@ const InmuRow = (props) => {
             <div className="desc text-left">
               <h1>{titulo}</h1>
               <p>
-                📍{direccion}
-                <br />
-                recamaras: {recamaras}
-                <br />
-                construidos: {metros}m2
-                <br />
-                <h5>${precio}</h5>
-              </p>
-              {/* <h1>{titulo}</h1>
-              <p>📍{direccion}</p>
-              <p>recamaras: {recamaras}</p>
-              <p>construidos: {metros}m2</p>
-              <h5>${precio}</h5> */}
+                📍{direccion}  </p>
+               
+                
+                <p> recamaras: {recamaras}  </p>
+               
+                <p> construidos: {metros}m2  </p>
+               
+                <p> <h5>${precio}</h5>  </p>
+            
+              
               <Link
                 className="e"
                 title={imagesC.length}

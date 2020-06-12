@@ -48,7 +48,7 @@ class InmuDe extends Component {
     const mensaje = this.state.mensaje;
     const { params } = this.props.match;
 
-    Axios.post(`http://localhost:5000/api/${params.id}`, {
+    Axios.post(`http://localhost:5000/api/in/${params.id}`, {
       email,
       nombre,
       telefono,
@@ -191,8 +191,7 @@ class InmuDe extends Component {
             <div className="col-12">
               <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4 col-xl-2">
                 <div className="formEsp2 ">
-                  <br />
-                  <br />
+                  
 
                   <h3>mensaje al anunciante</h3>
                   <br />
@@ -219,7 +218,7 @@ class InmuDe extends Component {
                     <label>Telefono</label>
                     <br />
                     <input
-                      type="string"
+                      type="number"
                       name="telefono"
                       value={this.state.telefono}
                       onChange={(e) => this.handleChange(e)}
